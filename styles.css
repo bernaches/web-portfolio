@@ -79,6 +79,9 @@ body {
   width: 34rem;
   height: 54rem;
 }
+.hero-title-box {
+  justify-self: start;
+}
 .hero-title {
   font-size: 9.4rem;
   font-weight: 700;
@@ -126,18 +129,29 @@ body {
 
 .section-projects {
   background-color: #222831;
-  padding: 4.4rem;
+  padding: 4.8rem;
 }
 
-.project-img {
-  justify-self: center;
-  /* TODO: review img height config */
+.project-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.project-text {
+.project-img {
+  width: 75%;
+  justify-self: center;
+  align-self: center;
+
+  border-radius: 2rem;
+}
+.project-text-box {
   line-height: 1.8;
   font-size: 1.8rem;
+
+  padding: 2.4rem 0rem 2.4rem 5.4rem;
 }
 .project-heading {
+  margin-bottom: 4.4rem;
 }
 
 .project-description {
@@ -147,7 +161,7 @@ body {
 /* GENERAL */
 .grid {
   display: grid;
-  column-gap: 6.4rem;
+  column-gap: 5.4rem;
   row-gap: 9.6rem;
 
   /* margin-bottom: 9.6rem; */
