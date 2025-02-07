@@ -20,12 +20,15 @@ body {
   font-weight: 400;
   color: #eeeeee;
 }
+
+/*  */
+/* HEADER START */
+/*   */
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   background-color: #222831;
-  align-self: center;
-  padding: 2.4rem 0rem;
+
   font-size: 1.8rem;
 
   font-weight: 600;
@@ -34,30 +37,36 @@ body {
 .header .header-links {
   margin: 0 2.4rem;
 }
+.header-img-logo {
+  width: 6rem;
+}
 .header-text {
   align-self: center;
 }
 .header-links {
   display: flex;
-  align-items: space-around;
   gap: 2.4rem;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
+  grid-column: 5/7;
 }
-
+.header-links .header-link {
+  text-transform: uppercase;
+}
 .header-link:link,
 .header-link:visited {
   text-decoration: none;
   color: #eeeeee;
   align-self: center;
-
-  text-transform: uppercase;
 }
 .header-link:hover,
 .header-link:active {
   color: #76abae;
 }
 
+/*  */
+/* HEADER END */
+/*  */
 .section-hero {
   background-color: #222831;
   padding: 4.8rem 0 12rem 0;
