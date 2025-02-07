@@ -33,7 +33,7 @@ body {
 
   font-weight: 600;
 
-  padding: 4.5rem 7rem 4.5rem 7rem;
+  padding: 4rem 7rem 4rem 7rem;
 }
 .header .header-text,
 .header .header-links {
@@ -77,24 +77,34 @@ body {
 /*  */
 .section-name-title {
   background-color: #222831;
+  padding: 0 7rem 0 7rem;
 }
 .section-name-title .container {
-  column-gap: -0;
+  column-gap: 0;
 }
 .section-name-title h1 {
   font-size: 15rem;
 }
 
 .title-first-name {
-  grid-row: 1 / span 2;
   grid-column: 1 / span 2;
-
-  align-self: stretch;
-  justify-self: end;
+  align-self: center;
+  justify-self: start;
 }
 .title-last-name {
-  grid-row: 2 / span 2;
-  grid-column: 2 / span 2;
+  grid-row: 2 / 2;
+  grid-column: 8 / span 2;
+
+  text-align: end;
+  align-self: center;
+  justify-self: end;
+}
+.title-description {
+  grid-row: 3/3;
+  grid-column: 1 / span 4;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
 /*  */
 /* SECTION NAME TITLE END */
@@ -217,8 +227,8 @@ body {
   grid-template-columns: repeat(8, 1fr);
 }
 
-.grid--4-rows {
-  grid-template-rows: repeat(4, 1fr);
+.grid--3-rows {
+  grid-template-rows: repeat(3, 1fr);
 }
 
 /*
