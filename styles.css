@@ -118,6 +118,40 @@ body {
   background-color: #222831;
 }
 
+.section-experience-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.experience-date-worked {
+  display: flex;
+}
+
+.experience-details {
+  display: grid;
+
+  row-gap: 0 rem;
+  column-gap: 5.4rem;
+}
+
+.company-description {
+  display: flex;
+  flex-direction: column;
+
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
+}
+.other-details {
+  grid-column: 3 / span 2;
+
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+}
+.responsibilities {
+  grid-column: 6 / span 3;
+
+  line-height: 1.8;
+}
 /*  */
 /* SECTION EXPERIENCE END */
 /*  */
@@ -243,6 +277,10 @@ body {
   grid-template-rows: repeat(3, 1fr);
 }
 
+.grid--2-rows {
+  grid-template-rows: repeat(2, 1fr);
+}
+
 /*
 --- 01 TYPOGRAPHY SYSTEM
 
@@ -313,4 +351,15 @@ implement smoother scroll
 adjust current theme (dark mode)
 
 implement light mode
+
+
+
+left off
+experience section
+font size
+spacing
+
+
+
+
  */
