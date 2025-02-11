@@ -143,13 +143,15 @@ body {
 }
 .other-details {
   grid-column: 3 / span 2;
-
+  grid-row: 2 / span 1;
+  column-gap: 4rem;
+  row-gap: 1rem;
   display: grid;
   grid-template-columns: repeat(2, min-content);
 }
 .responsibilities {
   grid-column: 6 / span 3;
-
+  grid-row: 2 / span 1;
   line-height: 1.8;
 }
 /*  */
