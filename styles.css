@@ -119,10 +119,19 @@ body {
 }
 
 .section-experience-content {
+  font-size: 1.6rem;
+}
+
+.company-name {
+  font-size: 4.5rem;
+}
+.section-experience-content {
   display: flex;
   flex-direction: row;
 }
-
+.experience-heading {
+  font-size: 6rem;
+}
 .experience-date-worked {
   display: flex;
 }
