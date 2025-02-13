@@ -143,10 +143,19 @@ body {
   column-gap: 5.4rem;
 }
 
+.company-name {
+  display: block;
+  white-space: nowrap;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+
+  justify-self: center;
+  align-self: center;
+}
 .company-description {
   display: flex;
   flex-direction: column;
-
+  margin-top: 1re;
   grid-column: 1 / span 3;
   grid-row: 2 / span 1;
 }
@@ -157,11 +166,57 @@ body {
   row-gap: 1rem;
   display: grid;
   grid-template-columns: repeat(2, min-content);
+
+  justify-items: center;
+  align-items: center;
 }
+.other-details p {
+  display: block;
+}
+
 .responsibilities {
   grid-column: 6 / span 3;
   grid-row: 2 / span 1;
   line-height: 1.8;
+}
+
+.position-title {
+  grid-column: 1/1;
+}
+.position {
+  grid-column: 2/3;
+
+  justify-self: end;
+}
+
+.location-title {
+  grid-row: 2/2;
+}
+.location {
+  grid-column: 2 / span 1;
+  justify-self: end;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.industry-title {
+  grid-row: 3/3;
+}
+.industry {
+  grid-column: 2 / span 1;
+  grid-row: 3 /3;
+  white-space: nowrap;
+  justify-self: end;
+}
+
+.website-title {
+  grid-row: 4/4;
+}
+
+.website {
+  grid-column: 2 / 2;
+  white-space: nowrap;
+  justify-self: end;
 }
 /*  */
 /* SECTION EXPERIENCE END */
@@ -289,7 +344,7 @@ body {
 }
 
 .grid--2-rows {
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
 }
 
 /*
