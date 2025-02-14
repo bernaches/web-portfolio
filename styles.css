@@ -155,7 +155,7 @@ body {
 .company-description {
   display: flex;
   flex-direction: column;
-  margin-top: 1re;
+  margin-top: 1rem;
   grid-column: 1 / span 3;
   grid-row: 2 / span 1;
 }
