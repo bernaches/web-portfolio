@@ -15,7 +15,14 @@
 
     <title>Website Portfolio</title>
   </head>
-
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
   <body>
     <div class="header">
       <svg
@@ -99,11 +106,6 @@
         </div>
       </section>
 
-      <!-- 
-      60px
-      45px
-      16px
-       -->
       <section class="section-experience">
         <div class="experience-container">
           <h1 class="experience-heading">Experience</h1>
@@ -145,9 +147,7 @@
             <div class="experience-details grid--8-cols grid--2-rows">
               <h4 class="company-name">AghimJuan PH</h4>
               <div class="company-description">
-                <p class="description-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+                <p class="description-text">Software company</p>
                 <p class="start-end-date">2022 — 2022</p>
               </div>
 
@@ -163,15 +163,17 @@
               </div>
 
               <p class="responsibilities">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Maiores nesciunt, incidunt, explicabo nulla totam corporis id
-                repellendus quos ducimus tempore, nihil accusantium quasi
-                suscipit voluptatum ea. Eligendi magni totam magnam.
+                I was part of a team of developers, designers, and QA's to
+                develop an employement marketplace product catered to the
+                trucking industry.
+                <br /><br />
+                AghimJuan PH is a startup software company where I interned.
               </p>
             </div>
           </div>
         </div>
       </section>
+
       <!-- TODO FIX MARGINS/PADDINGS -->
       <section class="section-projects">
         <h1 class="experience-heading">Projects</h1>
@@ -234,5 +236,25 @@
         </div>
       </section>
     </main>
+    <footer class="section-contact-me">
+      <hr class="experience-line-break" />
+      <div class="contact-me-details">
+        <div class="contact-email">
+          <h4 class="title">Contact me</h4>
+          <a href="#">jm@gmail.com</a>
+        </div>
+        <div class="extra-details">
+          <p>&copy; Miguel Coretico 2025</p>
+          <div class="outlinks">
+            <a class="links" href="#">
+              <ion-icon class="footer-logo" name="logo-linkedin"></ion-icon>
+            </a>
+            <a class="links" href="#">
+              <ion-icon class="footer-logo" name="logo-github"><a href="#"></a></a></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

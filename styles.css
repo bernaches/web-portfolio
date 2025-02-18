@@ -40,7 +40,7 @@ main {
 
   font-weight: 600;
 
-  padding: 4rem 7rem 4rem 7rem;
+  padding: 4rem 6.4rem 4rem 6.4rem;
 }
 .header .header-text,
 .header .header-links {
@@ -85,13 +85,13 @@ main {
 
 .section-name-title {
   background-color: #222831;
-  padding: 0 7rem 0 7rem;
+  margin: 0 6.4rem 0 6.4rem;
 }
 .section-name-title .container {
   column-gap: 0;
 }
 .section-name-title h1 {
-  font-size: 15rem;
+  font-size: 18rem;
 }
 
 .title-first-name {
@@ -246,7 +246,7 @@ main {
 /*  */
 .section-hero {
   background-color: #222831;
-  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 .hero {
   display: grid;
@@ -358,6 +358,70 @@ main {
 
 /*  */
 /* SECTION PROJECTS END */
+/*  */
+
+/*  */
+/* SECTION FOOTER START */
+/*  */
+.section-contact-me {
+  margin: 0 6.4rem 6.4rem 6.4rem;
+}
+.contact-me-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.contact-email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-email a {
+  font-size: 4.5rem;
+}
+.contact-email a:link,
+.contact-email a:visited {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.contact-email a:hover,
+.contact-email a:active {
+  color: #76abae;
+}
+.title {
+  font-size: 9rem;
+}
+.extra-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.extra-details p {
+  font-size: 1.6rem;
+}
+.outlinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  flex-direction: row-reverse;
+}
+.links:link,
+.links:visited {
+  text-decoration: none;
+  color: #eeeeee;
+}
+.links:hover,
+.links:active {
+  color: #76abae;
+}
+.footer-logo {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+/*  */
+/* SECTION FOOTER END */
 /*  */
 
 /* GENERAL */
