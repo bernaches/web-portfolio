@@ -48,9 +48,15 @@ main {
 }
 .header-img-logo {
   width: 6rem;
+}
+.header-img-logo a:link,
+.header-img-logo a:visited {
   fill: #eeeeee;
 }
-
+.header-img-logo a:hover,
+.header-img-logo a:active {
+  fill: #76abae;
+}
 .header-text {
   align-self: center;
 }
@@ -375,16 +381,37 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  justify-self: center;
 }
 .contact-email a {
-  font-size: 4.5rem;
+  font-size: 3.8rem;
+  display: grid;
+  gap: 1.8rem;
 }
+.contact-email a .line-break {
+  height: 0.25rem;
+  background-color: #76abae;
+  /* position: relative;
+  isolation: isolate; */
+}
+/* .contact-email a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  top: 0;
+  transition: 0.5s;
+}
+.contact-email a:hover::before {
+} */
+/* https://www.youtube.com/shorts/sMkRZByYS6I */
 .contact-email a:link,
 .contact-email a:visited {
   text-decoration: none;
   color: #eeeeee;
 }
-
 .contact-email a:hover,
 .contact-email a:active {
   color: #76abae;
