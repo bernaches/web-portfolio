@@ -389,23 +389,6 @@ main {
   display: grid;
   gap: 1.8rem;
 }
-.contact-email a .line-break {
-  height: 0.25rem;
-  background-color: #76abae;
-  /* position: relative;
-  isolation: isolate; */
-}
-/* .contact-email a::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  top: 0;
-  transition: 0.5s;
-}
-.contact-email a:hover::before {
-} */
 /* https://www.youtube.com/shorts/sMkRZByYS6I */
 .contact-email a:link,
 .contact-email a:visited {
@@ -416,6 +399,35 @@ main {
 .contact-email a:active {
   color: #76abae;
 }
+
+/* LINEBREAK */
+.contact-email a:link .line-break,
+.contact-email a:visited .line-break {
+  height: 0.25rem;
+  background-color: #eeeeee;
+  position: relative;
+  /* overflow: hidden; */
+}
+/* .contact-email a:hover .line-break,
+.contact-email a:active .line-break {
+  background-color: #76abae;
+} */
+
+.contact-email a:link .line-break::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+  top: 0;
+  right: 100%;
+  transition: 0.5s;
+  z-index: -1;
+}
+.contact-email a:link .line-break::before {
+  /* right: 0%; */
+}
+/* LINEBREAK */
 .title {
   font-size: 9rem;
 }
