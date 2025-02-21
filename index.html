@@ -24,6 +24,7 @@
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
   <body>
+    <!-- FIXME: have consisten font weight for all text -->
     <div class="header">
     <svg
     id=""
@@ -38,6 +39,7 @@
         />
       </a>
     </svg>
+    <!-- TODO: try implementing the bar thing from the email section -->
       <nav class="header-links">
         <a class="header-link" href="#about-me">About Me</a>
         <a class="header-link" href="#projects">Projects</a>
@@ -85,25 +87,62 @@
       </section>
 
       <section class="section-about-me" id="about-me">
-        <div class="container">
-          <h1 class="about-me-header">👋Hi, I'm Miguel</h1>
-
+      
+          <h1 class="experience-heading">About me</h1>
+          <hr class="experience-line-break" />
+          <div class="about-me-details grid--8-cols grid--2-rows">
+          <h1 class="about-me-header">"He who must climb the ladder must begin at the bottom"</h1>
           <p class="about-me-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-            itaque architecto saepe vitae dolores repellat dolorum alias dicta
-            atque ab cum nobis excepturi molestiae, harum eveniet corrupti
-            libero. Vero, ab. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Praesentium voluptate quisquam accusamus expedita! Inventore,
-            quo quisquam quibusdam doloremque ipsa ipsum atque fuga commodi
-            molestiae est aperiam nam consequatur voluptatum minima.
-          </p>
-          <p class="about-me-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque porro
-            vero fuga, laborum assumenda laudantium ut non, ea, iusto fugiat cum
-            labore! Dolore est in quae at quibusdam, sed id.
+            👋Hi, I'm Miguel
+            <br><br>  
+            I am a frontend developer with a strong knowledge of the MERN stack—including the fundamentals such as JavaScript, HTML, and CSS. 
+            <br><br>
+            I aspire to work in the fintech industry—or any industry, really, as long as I get to work on scalable projects. I strive to keep learning.
+            <br><br>
+            I graduated with a Bachelor's degree in Information Technology, specializing in App Development, from Mapúa University in Makati City, Philippines.
+            <br><br>
+            I am fluent in English and Filipino.
           </p>
 
-          <a href="#" class="view-my-works-btn">View My Works</a>
+          <!-- FIXME: add css -->
+          <div class="about-me-certificates">
+            <h3>Certificates</h3>
+            <hr class="experience-line-break" />
+            <div class="container">
+              <svg class="linkedin-learning-logo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 70.5">
+                <path class="" fill= "#0a66c2" d="M241,2.73c5.13.08,11.57-.24,16.61.51,1.86.28,2.1,1.57,2.36,3.13.68,4.07.18,8.99.27,13.18.28,13.81.84,28.6.02,42.36-.09,1.58-.25,5.2-2,5.73-2.11-.01-4.32.31-6.38.37-15.1.49-31.16.15-46.25-.27-2.07-.06-7.6.41-9.12-.38-2.09-1.09-1.22-5.5-1.78-7.44.52-16-.66-32.4,0-48.36.07-1.8.19-5.47,1.05-6.93,1.31-2.24,6.52-1.55,8.86-1.65.32-.01.57-.26.6-.26,11.61-.41,24.1-.18,35.75,0ZM205.09,13.28c-2.93,2.92-1.42,8.06,2.23,9.43,6.87,2.59,11.33-7.9,3.85-10.81-2.12-.82-4.47-.22-6.08,1.38ZM250.75,58.79v-21.55c0-.86-.4-2.91-.68-3.81-2.62-8.5-15.15-9.43-20.07-2.55-.17-1.18.4-2.8-.38-3.74h-9.62l.25,31.64h10c.12-4.02-.16-8.08-.01-12.09.09-2.32.2-6.7.93-8.79.96-2.76,6.4-3.46,8.19-1.53,1.58,1.71,1.06,9.79,1.13,12.33.02.59.26,1.13.27,1.72.06,2.78-.07,5.58-.01,8.36h10ZM214.5,27.15h-10.12l-.12,31.64h10l.25-31.64Z"/>
+                <path d="M484,70.75c-1.76-.34-9.59-1.23-10.19-2.92l-.3-3.31c4.43,2.13,9.08,3.55,14.06,2.67,7.78-1.37,9.04-7.1,8.94-14.13-3.17,3.15-5.61,5.65-10.38,5.98-6.36.44-11.51-2.12-14.33-7.89-1.34-2.74-1.3-7.12-1.05-10.18.47-5.92,6.56-11.36,12.39-11.82,5.58-.44,9.29,1.58,12.75,5.72.34.2.62-.55.62-.62v-4.61h3.25c-.27,8.45.35,17.12,0,25.55-.08,2.03-.21,4.86-.68,6.8-1.35,5.66-7.52,8.38-12.94,8.53l-.4.23h-1.75ZM482.93,32.19c-5.01.86-9.15,6.89-9.21,11.78-.1,9.24,10.2,16,18,9.94,9.23-7.17,3.5-23.83-8.79-21.72Z"/>
+                <path d="M184.75,12.7v45.59h-8.5c.24-5.79-1.37-2.45-3.83-.95-8.31,5.03-20.65-.8-21.43-10.62-.44-5.61-.14-10.51,3.41-15.06s7.98-5.23,13.72-4.75c2.94.25,4.92,1.5,6.88,3.61l.5-.25V12.7h9.25ZM162.34,36.95c-2.11,2.13-2.67,6.57-1.64,9.3,3.27,8.65,17.9,5.04,14.93-5.91-1.54-5.71-9.15-7.58-13.3-3.39Z"/>
+                <path d="M94.25,39.48c.05.2.42.52.63.13l10.13-11.83,11.74-.38-12.48,14.36,11.86,16.04-.25.5h-11.25l-9.52-14.18-.86-.52v14.7h-9.5V12.7h9.12l.38.37v26.41Z"/>
+                <path d="M147.5,45.59c-2.57.17-21.84-.4-22.48.52,0,1.83,1.57,4.04,3.1,4.97,4.32,2.62,8.13.51,11.47-2.48l6.41,4.84c-4.49,4.5-9.03,6-15.38,5.62-5.59-.33-10.65-3.45-13.41-8.31-2.08-3.67-2.09-12.11,0-15.79,6.05-10.66,25.18-11.92,29.12.97.93,3.06.96,6.48,1.18,9.66ZM138,39.86c-.05-5.16-4.65-8.45-9.42-5.77-2.07,1.16-4.1,3.2-3.58,5.77h13Z"/>
+                <path d="M79.25,58.29h-9.5v-17.07c0-1.05-.62-3.35-1.2-4.28-1.58-2.52-5.28-2.5-7.53-.93-2.77,1.92-2.11,5.06-2.27,7.95-.03.49-.24.96-.26,1.49-.16,4.27.14,8.57.01,12.84h-9.25v-30.89h8.75v3.99c1.26-.07,2.04-1.61,3-2.37,2.72-2.18,5.19-2.39,8.62-2.11,10.6.87,9.04,10.41,9.64,18.3v13.09Z"/>
+                <polygon points="10 12.7 10.25 49.32 29 49.32 29 58.29 .25 58.29 .25 12.7 10 12.7"/>
+                <path d="M335.75,45.34h-24.12c-.11,0-1.04.47-1.15.6-.83,1.04,1.48,5.24,2.28,6.25,3.5,4.43,11.05,5.17,15.47,1.73,1.47-1.14,2.62-3.56,4.66-2.85,2.8.96.38,3.05-1.02,4.24-8.8,7.48-22.99,4.06-25.05-7.91-1.96-11.39,6.35-20.18,17.99-17.93,7.16,1.38,10.77,9.21,10.94,15.88ZM331.5,42.35c-.96-13.7-19.82-13.25-21.25,0h21.25Z"/>
+                <path d="M365,53.06c-.37-.46-1.31,1.63-1.5,1.87-4.55,5.61-13.73,5.4-19.12,1.12-8.98-7.15-5.55-25.72,6.48-26.66,6.22-.49,10.01.67,14.01,5.49.39.2.62-1.29.62-1.37v-3.86h3.25v28.65h-3.75v-5.23ZM352.2,32.2c-2.56.26-4.75,1.92-6.45,3.78-7.23,7.88-.53,22.54,10.52,19.95,13.18-3.1,11.35-25.29-4.06-23.73Z"/>
+                <rect x="34.25" y="27.4" width="8.75" height="30.89"/>
+                <path d="M418.75,58.29h-3.75v-20.06c0-2.33-2.6-4.8-4.68-5.55-4.85-1.74-9.41,1.39-12.57,4.8v20.8h-3.25v-28.65h3.25c.1.63-.3,3.35.38,3.49.28.06,4.11-2.66,4.95-3.03,2.41-1.07,5.42-1.01,8.04-.7,3.85.45,7.16,4.31,7.37,8.1l.25,20.8Z"/>
+                <path d="M464.5,58.29h-3.25v-17.57c0-.77-.35-3.09-.63-3.86-.8-2.17-3.77-4.36-6.06-4.67-4.06-.55-7.85,2.44-10.81,4.79v21.3h-3.5v-28.65h3.5v3.99c1.03.08,1.51-1.04,2.27-1.6,4.32-3.13,10.72-4.22,15.21-.75.65.5,3.27,4.24,3.27,4.72v22.3Z"/>
+                <path d="M284.25,12.7v42.36h19.88c.75.79.23,2.21.38,3.24h-24V12.7h3.75Z"/>
+                <path d="M379.75,58.29h-3.75v-28.65h3.25v4.36l.62.37c1.02-.97,1.52-2.18,2.63-3.12,2.21-1.87,8.22-3.73,6.51,1.26-3.45.43-6.45,1-8.13,4.35-.29.57-1.13,2.86-1.13,3.36v18.06Z"/>
+                <polygon points="432 29.64 432 58.29 428.75 58.29 428.5 32.63 424 32.38 424 29.64 432 29.64"/>
+                <path d="M36.94,12.26c2.83-.47,5.6.07,6.63,2.99,2.19,6.16-5.2,10.11-9.2,5.43-2.26-2.65-.9-7.83,2.56-8.41Z"/>
+                <path  d="M429.19,15.99c3.14-.51,5.69,3.34,2.69,5.68-1.26.98-2.23.84-3.6.1-2.29-1.25-1.46-5.39.91-5.78Z"/>
+              </svg>
+              <svg class="udemy-logo" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 103">
+                <path class="" fill=" #a435f0" d="M42.81,25.68l-20.7-11.96L1.42,25.68v-11.96L22.11,1.76l20.7,11.96v11.96h0Z"/>
+                <path d="M12.26,35.72v26.36c0,6.81,5.08,10.13,9.85,10.13s9.86-3.41,9.86-10.22v-26.27h10.84v26.99c0,6.27-1.97,11.11-5.91,14.43-3.95,3.32-8.87,4.93-14.88,4.93s-10.93-1.61-14.78-4.93c-3.85-3.32-5.82-7.98-5.82-14.17v-27.25h10.84ZM136.54,68.48l8.05,4.65c-4.91,5.6-11.46,8.85-19.69,8.85-7.08,0-12.9-2.15-17.29-6.36-4.39-4.22-6.63-9.87-6.63-16.95v-.35c0-7.18,2.24-12.91,6.63-17.31,4.48-4.39,10.13-6.54,17.03-6.54s11.92,2.15,16.03,6.54c4.21,4.39,6.27,9.77,6.27,16.23,0,2.08-.24,4.3-.24,4.3h-35.03c.59,6.87,5.8,11.3,13.58,11.3,4.26,0,8-1.44,11.28-4.36h0ZM115.94,46.48c-2.31,1.8-3.64,4.01-3.99,6.63h24.04c-.1-2.54-1.26-4.75-3.39-6.54-2.24-1.97-4.84-2.96-7.98-2.96-3.31,0-6.27.99-8.69,2.87h0ZM245.67,88.07c-4.4,10.39-9,13.93-16.05,13.93h-4.89v-9.62h3.96c2.43,0,4.68-.91,6.83-5.88l2.15-4.97-18.55-45.81h11.02l13.17,33,13.53-33h11.02l-22.19,52.35h0ZM85.02,18.42h10.75v62.49h-10.75v-4.16c-2.45,2.26-7.09,5.15-14.43,5.15-6.36,0-11.74-2.24-16.12-6.73-4.3-4.57-6.45-10.13-6.45-16.86s2.15-12.28,6.45-16.77c4.39-4.57,9.76-6.81,16.12-6.81,5.34,0,10.87,1.89,14.43,5.08v-21.39ZM85.83,58.32c0-3.95-1.35-7.27-4.04-9.86-2.6-2.6-5.91-3.95-9.77-3.95s-6.99,1.35-9.58,3.95c-2.51,2.6-3.76,5.91-3.76,9.86s1.26,7.26,3.76,9.86c2.6,2.6,5.73,3.95,9.58,3.95s7.17-1.35,9.77-3.95c2.69-2.6,4.04-5.92,4.04-9.86ZM202.4,34.83c9.35,0,15.68,6.32,15.68,18.11v27.97h-10.75v-26.45c0-6.18-2.96-10.04-8.07-10.04s-8.95,4.31-8.95,10.49v26.01h-10.66v-26.45c0-6.19-2.95-10.04-8.07-10.04s-8.78,4.39-8.78,10.49v26h-10.66v-45.18h10.66v4.7c1.9-2.33,5.71-5.6,12.19-5.6,7.65,0,10.93,4.44,12.09,6.66,2.91-3.27,7.15-6.66,15.32-6.66h0Z"/>
+              </svg>
+            </div>
+            <div class="container">
+              <p class="cert-linkedin-1">React.JS Essential Training </p>
+              <p class="cert-udemy-1">Build Responsive Real-World Websites</p>
+              <p class="cert-udemy-2">The Complete JavaScript Course</p>
+            </div>
+          </div>
+
+          <!-- <a href="#" class="view-my-works-btn">View My Works</a> -->
+       
+
         </div>
       </section>
 
@@ -175,7 +214,7 @@
         </div>
       </section>
 
-      <!-- TODO FIX MARGINS/PADDINGS -->
+      <!-- TODO: FIX MARGINS/PADDINGS -->
       <section class="section-projects" id="projects">
         <h1 class="experience-heading">Projects</h1>
         <hr class="experience-line-break" />
@@ -184,12 +223,15 @@
           <div class="project-text-box">
             <h2 class="project-heading">PRC Document Monitoring System</h2>
             <p class="project-description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-              eos commodi dignissimos corporis quam minus mollitia, ipsa eius
-              debitis placeat dolore nisi. Quod autem placeat repellat libero
-              porro dolore quibusdam.
+              As part of my final thesis requirement—for college—my colleagues and I were tasked to developr a prototype web system for the Professional Regulation Commision.
+              <br/>
+              <br/>
+              This product aimed to digitize the accreditation process of the licensing and regulatory agency.
+              
+              
             </p>
           </div>
+          <!-- TODO: LOOK FOR OLD SIOMAI INC PROJECT FILE IN GROUPCHATS SA MESSENGER -->
           <div class="project-img-box">
             <img
               class="project-img"
@@ -210,29 +252,8 @@
           <div class="project-text-box">
             <h2 class="project-heading">Siomai Inc.</h2>
             <p class="project-description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-              eos commodi dignissimos corporis quam minus mollitia, ipsa eius
-              debitis placeat dolore nisi. Quod autem placeat repellat libero
-              porro dolore quibusdam.
+              This project was developed to fulfill a course requirement. My colleagues and I reached out to a small food business where we frequently ate and asked if we could develop a simple website for their business.
             </p>
-          </div>
-          <!-- 3 -->
-          <div class="project-text-box">
-            <h2 class="project-heading">TEST</h2>
-            <p class="project-description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-              eos commodi dignissimos corporis quam minus mollitia, ipsa eius
-              debitis placeat dolore nisi. Quod autem placeat repellat libero
-              porro dolore quibusdam.
-            </p>
-          </div>
-          <div class="project-img-box">
-            <img
-              class="project-img"
-              src="img/project-img-1.png"
-              alt="screenshot of Siomai Inc"
-              srcset=""
-            />
           </div>
         </div>
       </section>
