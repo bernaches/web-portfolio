@@ -76,10 +76,36 @@ main {
   color: #eeeeee;
   align-self: center;
 }
+.header-link:link .line-break,
+.header-link:visited .line-break {
+  height: 0.15rem;
+  margin-top: 0.5rem;
+  background-color: #eeeeee;
+  position: relative;
+  overflow: hidden;
+}
+
 .header-link:hover,
 .header-link:active {
   color: #76abae;
 }
+/* LINEBREAK */
+
+.header-link:link .line-break::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #76abae;
+  top: 0;
+  right: 100%;
+  transition: 0.8s;
+  /* z-index: -1; */
+}
+.header-link:link:hover .line-break::before {
+  right: 0%;
+}
+/* LINEBREAK */
 
 /*  */
 /* HEADER END */
