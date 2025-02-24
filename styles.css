@@ -314,9 +314,7 @@ main {
 .section-about-me {
   background-color: #222831;
   padding: 4.8rem 6.4rem;
-
   color: #eeeeee;
-
   line-height: 1.8;
 }
 .about-me-container {
@@ -351,9 +349,15 @@ main {
 .about-me-certificates .experience-line-break {
   margin-bottom: 0px;
 }
+.about-me-certificates h3 {
+  font-size: 3rem;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+.container p {
+  font-size: 1.6rem;
 }
 
 .cert-udemy-2 {
