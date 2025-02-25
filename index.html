@@ -26,6 +26,7 @@
   ></script>
   <body>
     <!-- FIXME: have consisten font weight for all text -->
+    <!-- FIXME: EXPERIENCE HEADING & LINE BREAK - make label more general -->
     <div class="header">
     <svg
     id=""
@@ -230,43 +231,68 @@
       <section class="section-projects" id="projects">
         <h1 class="experience-heading">Projects</h1>
         <hr class="experience-line-break" />
-        <div class="container grid grid--2-cols">
-          <!-- 1 -->
-          <div class="project-text-box">
-            <h2 class="project-heading">PRC Document Monitoring System</h2>
+        <div class="projects-container">
+          <!-- project 1 START -->
+          <div class="project-content grid--8-cols grid--2-rows left-to-right">
+            <div class="project-heading">
+              <h4 class="heading-title">PRC Document Monitoring System</h4>
+              <p class="heading-info">Web Development, Thesis</p>
+              <p class="heading-info-date">20——</p>
+            </div>
+            <!-- TODO: BUTTONS -->
+            <div class="project-screenshot">
+              <div class="black-border"> 
+                <div class="screenshot-img">
+                  <img src="img/project1-img-1.png" alt="">
+                </div>
+                <div>
+                  <p></p>
+                  <div>
+                    <button>
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </button>
+                    <button>
+                      <ion-icon name="arrow-back-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <p class="project-description">
-              As part of my final thesis requirement—for college—my colleagues and I were tasked to developr a prototype web system for the Professional Regulation Commision.
-              <br/>
-              <br/>
-              This product aimed to digitize the accreditation process of the licensing and regulatory agency.
-              
-              
+              As part of my final thesis requirement—for college—my colleagues and I
+              were tasked to developr a prototype web system for the Professional
+              Regulation Commision.
+              <br />
+              <br />
+              This product aimed to digitize the accreditation process of the
+              licensing and regulatory agency.
             </p>
           </div>
-          <div class="project-img-box">
-            <img
-              class="project-img"
-              src="img/project1-img-1.png"
-              alt="screenshot of DMS"
-              srcset=""
-            />
-          </div>
-          <!-- 2 -->
-          <div class="project-img-box">
-            <img
-              class="project-img"
-              src="img/project2-img-1.png"
-              alt="screenshot of Siomai Inc"
-              srcset=""
-            />
-          </div>
-          <div class="project-text-box">
-            <h2 class="project-heading">Siomai Inc.</h2>
+          <!-- project 1 END -->
+
+          <div class="project-content grid--8-cols grid--2-rows right-to-left">
+            <div class="project-heading ">
+              <h4 class="heading-title">Siomai Inc.</h4>
+              <p class="heading-info">Web Development, Freelance</p>
+              <p class="heading-info-date">20——</p>
+            </div>
+            <div class="project-screenshot">
+              <div class="black-border"> 
+                <div class="screenshot-img">
+                  <img src="img/project2-img-1.png" alt="">
+                </div>
+              </div>
+            </div>
             <p class="project-description">
-              This project was developed to fulfill a course requirement. My colleagues and I reached out to a small food business where we frequently ate and asked if we could develop a simple website for their business.
+              This project was developed to fulfill a course 
+              requirement. 
+              <br><br>
+              My colleagues and I reached out to a small food business where we
+              frequently ate and asked if we could develop a simple website for their
+              business.
             </p>
           </div>
-        </div>
+      </div>
       </section>
     </main>
     <footer class="section-contact-me" id="contact-me">
