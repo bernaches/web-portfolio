@@ -1,0 +1,46 @@
+<section class="section-projects" id="projects">
+  <h1 class="experience-heading">Projects</h1>
+  <hr class="experience-line-break" />
+  <div class="container grid grid--2-cols">
+    <!-- 1 -->
+    <div class="project-text-box">
+      <h2 class="project-heading">PRC Document Monitoring System</h2>
+      <p class="project-description">
+        As part of my final thesis requirement—for college—my colleagues and I
+        were tasked to developr a prototype web system for the Professional
+        Regulation Commision.
+        <br />
+        <br />
+        This product aimed to digitize the accreditation process of the
+        licensing and regulatory agency.
+      </p>
+    </div>
+    <div class="project-img-box">
+      <img
+        class="project-img"
+        src="img/project1-img-1.png"
+        alt="screenshot of DMS"
+        srcset=""
+      />
+    </div>
+    <!-- 2 START-->
+    <div class="project-img-box">
+      <img
+        class="project-img"
+        src="img/project2-img-1.png"
+        alt="screenshot of Siomai Inc"
+        srcset=""
+      />
+    </div>
+    <div class="project-text-box">
+      <h2 class="project-heading">Siomai Inc.</h2>
+      <p class="project-description">
+        This project was developed to fulfill a course requirement. My
+        colleagues and I reached out to a small food business where we
+        frequently ate and asked if we could develop a simple website for their
+        business.
+      </p>
+    </div>
+    <!-- 2 END -->
+  </div>
+</section>
