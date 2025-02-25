@@ -426,6 +426,10 @@ main {
   font-size: 2rem;
 }
 .project-screenshot {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
 }
 .black-border {
   padding: 2rem;
@@ -450,7 +454,21 @@ main {
   font-size: 1.6rem;
   line-height: 1.6;
 }
-
+.img-buttons {
+  /* grid col */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-row: 3 / span 2;
+  font-size: 1.6rem;
+}
+.button {
+  background-color: none;
+  border: none;
+  color: none;
+  display: inline-block;
+  font-size: 2rem;
+}
 .left-to-right {
   .project-heading {
     grid-column: 1 / span 2;
