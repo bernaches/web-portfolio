@@ -440,7 +440,7 @@ main {
 .screenshot-img {
   width: 100%;
   position: relative;
-  aspect-ratio: 1.51153846154;
+  aspect-ratio: 16/9;
 }
 .screenshot-img img {
   position: absolute;
@@ -468,6 +468,8 @@ main {
   color: none;
   display: inline-block;
   font-size: 2rem;
+
+  cursor: pointer;
 }
 .left-to-right {
   .project-heading {
