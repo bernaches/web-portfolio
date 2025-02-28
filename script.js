@@ -10,62 +10,71 @@ const changeFavicon = () => {
 };
 changeFavicon();
 
-const images = document.querySelectorAll(".screenshot-img .img");
-let currentIndex = 0;
+// const images = document.querySelectorAll(".screenshot-img .img");
+// let currentIndex = 0;
 
-var next = document.querySelector(".button.next");
-var prev = document.querySelector(".button.back");
-var imgSrc = document.querySelectorAll(".img");
-var pageNum = document.querySelector(".page");
-next.addEventListener("click", showNextImage);
-prev.addEventListener("click", showPreviousImage);
+// var next = document.querySelector(".button.next");
+// var prev = document.querySelector(".button.back");
+// var imgSrc = document.querySelectorAll(".img");
+// var pageNum = document.querySelector(".page");
+// next.addEventListener("click", showNextImage);
+// prev.addEventListener("click", showPreviousImage);
 
-pageNum.textContent = `${currentIndex + 1} / ${imgSrc.length - 1}`;
-function showNextImage() {
-  // Remove the "show" class from the current image
-  images[currentIndex].classList.remove("show");
+// pageNum.textContent = `${currentIndex + 1} / ${imgSrc.length - 1}`;
+// console.log(`index outside: ${currentIndex}`);
+// function showNextImage() {
+//   // Remove the "show" class from the current image
+//   images[currentIndex].classList.remove("show");
+//   console.log(`current index: ${currentIndex}`);
 
-  // Increment the index to move to the next image
-  currentIndex = (currentIndex + 1) % images.length;
-  // Update page count in DOM
-  pageNum.textContent = `${currentIndex + 1} / ${imgSrc.length - 1}`;
+//   // Increment the index to move to the next image
+//   currentIndex = (currentIndex + 1) % images.length;
+//   console.log(`next index: ${currentIndex}`);
 
-  // Add the "show" class to the next image
-  images[currentIndex].classList.add("show");
-}
-function showPreviousImage() {
-  images[currentIndex].classList.remove("show");
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  pageNum.textContent = `${currentIndex + 1} / ${imgSrc.length - 1}`;
-  images[currentIndex].classList.add("show");
-}
-// document.addEventListener("DOMContentLoaded", initializeImageSlider);
-// function initializeImageSlider(projectContent) {
-//   const images = projectContent.querySelectorAll(".screenshot-img .img");
-//   const nextButton = projectContent.querySelector(".button.next");
-//   const prevButton = projectContent.querySelector(".button.back");
-//   const pageNum = projectContent.querySelector(".page");
-//   let currentIndex = 0;
+//   // Add the "show" class to the next image
+//   images[currentIndex].classList.add("show");
+//   console.log(`next img called ${currentIndex}`);
 
-//   pageNum.textContent = `${currentIndex + 1} / ${images.length}`;
-
-//   function showNextImage() {
-//     images[currentIndex].classList.remove("show");
-//     currentIndex = (currentIndex + 1) % images.length;
-//     pageNum.textContent = `${currentIndex + 1} / ${images.length}`;
-//     images[currentIndex].classList.add("show");
-//   }
-
-//   function showPreviousImage() {
-//     images[currentIndex].classList.remove("show");
-//     currentIndex = (currentIndex - 1 + images.length) % images.length;
-//     pageNum.textContent = `${currentIndex + 1} / ${images.length}`;
-//     images[currentIndex].classList.add("show");
-//   }
-
-//   nextButton.addEventListener("click", showNextImage);
-//   prevButton.addEventListener("click", showPreviousImage);
+//   // Update page count in DOM
+//   pageNum.textContent = `${currentIndex + 1} / ${imgSrc.length - 1}`;
+//   console.log(`final index: ${currentIndex + 1}`);
+// }
+// function showPreviousImage() {
+//   images[currentIndex].classList.remove("show");
+//   currentIndex = (currentIndex - 1 + images.length) % images.length;
+//   // pageNum.textContent = `${currentIndex + 1} / ${imgSrc.length - 1}`;
+//   images[currentIndex].classList.add("show");
+//   console.log(`back img called`);
 // }
 
-// // Initialize the image slider for each project content div
-// document.querySelectorAll(".project-content").forEach(initializeImageSlider);
+// Select all elements with the class 'project-content'
+const projectContents = document.querySelectorAll(".project-content");
+
+// Loop through each 'project-content' element
+projectContents.forEach((projectContent, index) => {
+  // Add a click event listener to each 'project-content'
+  projectContent.addEventListener("click", () => {
+    // Log which 'project-content' was clicked
+    console.log(`Clicked on project-content ${index + 1}`);
+
+    // You can also access specific elements within the clicked 'project-content'
+    const headingTitle =
+      projectContent.querySelector(".heading-title").textContent;
+    console.log(`Project Title: ${headingTitle}`);
+
+    const prev = projectContent.querySelectorAll(".button.back");
+    const next = projectContent.querySelectorAll(".button.next");
+    prev.forEach((p) => {
+      p.addEventListener("click", () => {
+        console.log(`${p}`);
+      });
+    });
+    next.forEach((n) => {
+      n.addEventListener("click", () => {
+        console.log(`You clicked next`);
+      });
+    });
+
+    // console.log(`button: ${buttons}`);
+  });
+});
