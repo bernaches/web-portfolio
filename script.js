@@ -79,6 +79,25 @@ changeFavicon();
 //   });
 // });
 
-function prev() {
+let imageIndex = 0;
+showImage(imageIndex);
+
+function plusImage(n) {
+  showImage((imageIndex += n));
+}
+function currentImage(n) {
+  showIage((imageIndex = n));
+}
+
+function showImage(n) {
+  console.log(`current: ${imageIndex}`);
+  var i;
   var images = document.querySelectorAll(".screenshot-img .img");
+
+  if (n >= images.length) {
+    imageIndex = 0;
+    console.log(`new: ${imageIndex}`);
+  }
+
+  images[imageIndex].classList.add("show");
 }
