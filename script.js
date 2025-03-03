@@ -48,33 +48,37 @@ changeFavicon();
 // }
 
 // Select all elements with the class 'project-content'
-const projectContents = document.querySelectorAll(".project-content");
+// const projectContents = document.querySelectorAll(".project-content");
 
-// Loop through each 'project-content' element
-projectContents.forEach((projectContent, index) => {
-  // Add a click event listener to each 'project-content'
-  projectContent.addEventListener("click", () => {
-    // Log which 'project-content' was clicked
-    console.log(`Clicked on project-content ${index + 1}`);
+// // Loop through each 'project-content' element
+// projectContents.forEach((projectContent, index) => {
+//   // Add a click event listener to each 'project-content'
+//   projectContent.addEventListener("click", () => {
+//     // Log which 'project-content' was clicked
+//     console.log(`Clicked on project-content ${index + 1}`);
 
-    // You can also access specific elements within the clicked 'project-content'
-    const headingTitle =
-      projectContent.querySelector(".heading-title").textContent;
-    console.log(`Project Title: ${headingTitle}`);
+//     // You can also access specific elements within the clicked 'project-content'
+//     const headingTitle =
+//       projectContent.querySelector(".heading-title").textContent;
+//     console.log(`Project Title: ${headingTitle}`);
 
-    const prev = projectContent.querySelectorAll(".button.back");
-    const next = projectContent.querySelectorAll(".button.next");
-    prev.forEach((p) => {
-      p.addEventListener("click", () => {
-        console.log(`${p}`);
-      });
-    });
-    next.forEach((n) => {
-      n.addEventListener("click", () => {
-        console.log(`You clicked next`);
-      });
-    });
+//     const prev = projectContent.querySelectorAll(".button.back");
+//     const next = projectContent.querySelectorAll(".button.next");
+//     prev.forEach((p) => {
+//       p.addEventListener("click", () => {
+//         console.log(`${p}`);
+//       });
+//     });
+//     next.forEach((n) => {
+//       n.addEventListener("click", () => {
+//         console.log(`You clicked next`);
+//       });
+//     });
 
-    // console.log(`button: ${buttons}`);
-  });
-});
+//     // console.log(`button: ${buttons}`);
+//   });
+// });
+
+function prev() {
+  var images = document.querySelectorAll(".screenshot-img .img");
+}
