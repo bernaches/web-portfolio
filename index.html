@@ -241,7 +241,7 @@
             <div class="project-screenshot">
               <div class="black-border"> 
                 <div class="screenshot-img">
-                  <img class="img show" src="img/project1-img-1.png"  alt="">
+                  <img class="img " src="img/project1-img-1.png"  alt="">
                   <img class="img " src="img/project1-img-2.png" alt="">
                   <img class="img " src="img/project1-img-3.png" alt="">
                   <img class="img " src="img/project1-img-4.png" alt="">
@@ -251,10 +251,10 @@
               <div class="img-buttons">
                 <p class="page" >0 / 0</p>
                 <div class="buttons" id="first" >
-                  <a class="button back" onclick="prev()" >
+                  <a class="button back" onclick="plusImage(-1)" >
                     <ion-icon name="caret-back-outline"></ion-icon>
                   </a>
-                  <a class="button next" >
+                  <a class="button next" onclick="plusImage(1)">
                     <ion-icon name="caret-forward-outline"></ion-icon>
                   </a>
                 </div>
@@ -281,14 +281,14 @@
             </div>
             <div class="project-screenshot">
               <div class="black-border"> 
-                <div class="screenshot-img">
+                <div class="screenshot-img-hide">
                   <img class="img show" src="img/project2-img-1.png" alt="">
                 </div>
               </div>
               <div class="img-buttons">
                 <p class="page">0 / 0</p>
                 <div class="buttons" >
-                  <a class="button" id="back">
+                  <a class="button" id="back" onclick="prev()">
                     <ion-icon name="caret-back-outline"></ion-icon>
                   </a>
                   <a class="button" id="next">
