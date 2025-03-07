@@ -24,9 +24,13 @@
   src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
   <body>
-    <!-- FIXME: have consisten font weight for all text -->
+    <!-- TODO: add hover effect to buttons -->
     <!-- FIXME: EXPERIENCE HEADING & LINE BREAK - make label more general -->
+     <!-- FIXME: Header LOGO AND LINKS -->
+
+    <!-- TODO: media queries? -->
     <div class="header">
+    <a href="" class="logo-button" >
       <svg
       id=""
       data-name=""
@@ -34,12 +38,11 @@
       viewBox="0 0 500 500"
       class="header-img-logo"
       >
-      <a href="" >
         <path
         d="M326.95,247.55c-1.92,10.88-2.88,21.97-2.88,33.3,0,16.71,3.27,29.26,9.85,37.62,6.58,8.36,15.9,12.53,28,12.53,10.34,0,20.47-1.37,30.35-4.14,9.88-2.76,44.17-14.15,56.85-19.93l-13.15,65.74c-12.45,6.04-34.89,12.66-47.63,15.29-12.72,2.65-25.73,3.96-38.98,3.96-21.27,0-38.9-4.5-52.86-13.48-2.19-1.4-4.29-2.92-6.3-4.52l-2.81,14.22h-61.22l20.4-103.53c3.85-19.23,7.22-35.02,10.11-47.34,2.91-12.32,5.33-22.17,7.25-29.51,1.91-7.36,3.27-13.17,4.09-17.46h-1.4l-84.06,197.84h-64.54v-197.84h-1.4c-1.86,12.96-3.65,25.24-5.39,36.87-1.74,11.64-3.4,22.42-4.98,32.35-1.56,9.94-3.11,19.04-4.62,27.34l-19.71,101.28H21.23L75.14,112.42h90.34v195.76h1.4l83.37-195.76h91.74s29.94-4.34,48.55-4.34c16.97,0,32.21,2.17,45.69,6.51,13.5,4.34,22.77,7.41,45.79,18.08l-11.51,60.44c-18.08-7.11-36.17-14.22-51.72-18.36-9.32-2.48-18.48-5.19-28.24-5.19-8.27,0-15.85,2.01-22.77,6.04-6.92,4.02-13.07,9.62-18.48,16.78-5.41,7.16-10.01,15.43-13.78,24.8-3.78,9.37-6.64,19.48-8.55,30.36Z"
         />
-      </a>
-    </svg>
+      </svg>
+    </a>
     <!-- TODO: in the future, clean up code. Redundancy with line-break here -->
     <nav class="header-links">
       <a class="header-link" href="#about-me">
@@ -63,7 +66,7 @@
   
   <main id="main">
     <section class="section-name-title">
-      <div class="container grid grid--8-cols grid--3-rows">
+      <div class="grid grid--8-cols grid--3-rows">
         <h1 class="title-first-name">Miguel</h1>
           <h1 class="title-last-name">Coretico</h1>
           
@@ -101,10 +104,9 @@
       </section>
       
       <section class="section-about-me" id="about-me">
-        
-        <h1 class="experience-heading">About me</h1>
-        <hr class="experience-line-break" />
-        <div class="about-me-details grid--8-cols grid--2-rows">
+        <h1 class="heading">About me</h1>
+        <hr class="line-break" />
+        <div class="about-me grid--8-cols grid--2-rows">
           <h1 class="about-me-header">"He who must climb the ladder must begin at the bottom"</h1>
           <p class="about-me-text">
             👋Hi, I'm Miguel
@@ -120,8 +122,8 @@
           
           
           <div class="about-me-certificates">
-            <h3>Certificates</h3>
-            <hr class="experience-line-break" />
+            <h3 class="certificates-header">Certificates</h3>
+            <hr class="line-break" />
             <div class="container">
               <svg class="linkedin-learning-logo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 70.5">
                 <path class="" fill= "#0a66c2" d="M241,2.73c5.13.08,11.57-.24,16.61.51,1.86.28,2.1,1.57,2.36,3.13.68,4.07.18,8.99.27,13.18.28,13.81.84,28.6.02,42.36-.09,1.58-.25,5.2-2,5.73-2.11-.01-4.32.31-6.38.37-15.1.49-31.16.15-46.25-.27-2.07-.06-7.6.41-9.12-.38-2.09-1.09-1.22-5.5-1.78-7.44.52-16-.66-32.4,0-48.36.07-1.8.19-5.47,1.05-6.93,1.31-2.24,6.52-1.55,8.86-1.65.32-.01.57-.26.6-.26,11.61-.41,24.1-.18,35.75,0ZM205.09,13.28c-2.93,2.92-1.42,8.06,2.23,9.43,6.87,2.59,11.33-7.9,3.85-10.81-2.12-.82-4.47-.22-6.08,1.38ZM250.75,58.79v-21.55c0-.86-.4-2.91-.68-3.81-2.62-8.5-15.15-9.43-20.07-2.55-.17-1.18.4-2.8-.38-3.74h-9.62l.25,31.64h10c.12-4.02-.16-8.08-.01-12.09.09-2.32.2-6.7.93-8.79.96-2.76,6.4-3.46,8.19-1.53,1.58,1.71,1.06,9.79,1.13,12.33.02.59.26,1.13.27,1.72.06,2.78-.07,5.58-.01,8.36h10ZM214.5,27.15h-10.12l-.12,31.64h10l.25-31.64Z"/>
@@ -158,15 +160,16 @@
           
           
         </div>
+   
       </section>
       
       <section class="section-experience" id="experience">
-        <div class="experience-container">
-          <h1 class="experience-heading">Experience</h1>
-          <hr class="experience-line-break" />
+      
+          <h1 class="heading">Experience</h1>
+          <hr class="line-break" />
           
           <!-- flex -->
-          <div class="section-experience-content">
+          <div class="experience">
             <!-- grid -->
             <div class="experience-details grid--8-cols grid--2-rows">
               <h4 class="company-name">Famauleg Inc.</h4>
@@ -223,15 +226,15 @@
                 <br /><br />
                 AghimJuan PH is a startup software company where I interned.
               </p>
-            </div>
+   
           </div>
         </div>
       </section>
     
       <section class="section-projects" id="projects">
-        <h1 class="experience-heading">Projects</h1>
-        <hr class="experience-line-break" />
-        <div class="projects-container">
+        <h1 class="heading">Projects</h1>
+        <hr class="line-break" />
+        <div class="projects">
           <!-- project 1 START -->
           <div class="project-content grid--8-cols grid--2-rows left-to-right">
             <div class="project-heading">
@@ -265,8 +268,7 @@
               As part of my final thesis requirement—for college—my colleagues and I
               were tasked to developr a prototype web system for the Professional
               Regulation Commision.
-              <br />
-              <br />
+              <br />              <br />
               This product aimed to digitize the accreditation process of the
               licensing and regulatory agency.
             </p>
@@ -314,7 +316,7 @@
       </section>
     </main>
     <footer class="section-contact-me" id="contact-me">
-      <hr class="experience-line-break" />
+      <hr class="line-break" />
       <div class="contact-me-details">
         <div class="contact-email">
           <h4 class="title">Let's chat.</h4>
