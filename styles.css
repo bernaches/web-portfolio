@@ -566,6 +566,7 @@ main {
 /* LINEBREAK */
 .contact-email a:link .line-break,
 .contact-email a:visited .line-break {
+  margin: 0;
   height: 0.2rem;
   background-color: #bebebe;
   position: relative;
