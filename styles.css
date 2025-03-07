@@ -49,13 +49,20 @@ main {
 }
 .header-img-logo {
   width: 6rem;
-}
-.header-img-logo a:link,
-.header-img-logo a:visited {
   fill: #eeeeee;
 }
-.header-img-logo a:hover,
-.header-img-logo a:active {
+.logo-button {
+  width: 6rem;
+  height: 6rem;
+  align-self: flex-start;
+  justify-self: start;
+}
+.logo-button:link,
+.logo-button:visited {
+  fill: #eeeeee;
+}
+.logo-button:hover,
+.logo-button:active {
   fill: #76abae;
 }
 .header-text {
@@ -65,11 +72,13 @@ main {
   display: flex;
   gap: 2.4rem;
   justify-content: space-between;
-  align-content: center;
+  align-content: ceter;
   grid-column: 4/7;
+  font-weight: 400;
 }
-.header-links .header-link {
+.header-link {
   text-transform: uppercase;
+  align-self: center;
 }
 .header-link:link,
 .header-link:visited {
@@ -79,9 +88,10 @@ main {
 }
 .header-link:link .line-break,
 .header-link:visited .line-break {
-  height: 0.15rem;
+  height: 0.2rem;
+  border: none;
   margin-top: 0.5rem;
-  background-color: #eeeeee;
+  background-color: #bebebe;
   position: relative;
   overflow: hidden;
 }
@@ -120,9 +130,7 @@ main {
   background-color: #222831;
   margin: 0 6.4rem 0 6.4rem;
 }
-.section-name-title .container {
-  column-gap: 0;
-}
+
 .section-name-title h1 {
   font-size: 18rem;
 }
@@ -146,6 +154,7 @@ main {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.8;
+  color: #bebebe;
 }
 /*  */
 /* SECTION NAME TITLE END */
@@ -157,21 +166,10 @@ main {
 
 .section-experience {
   background-color: #222831;
-}
-.experience-container {
-  padding: 0 6.4rem 0 6.4rem;
-}
-.experience-heading {
-  font-size: 6.4rem;
-  margin-bottom: 3rem;
-
-  text-transform: uppercase;
-}
-.experience-line-break {
-  margin-bottom: 6.4rem;
+  margin: 0 6.4rem 0 6.4rem;
 }
 
-.section-experience-content {
+.experience {
   display: flex;
   flex-direction: column;
   gap: 7.6rem;
@@ -193,17 +191,21 @@ main {
   align-self: center;
 
   font-size: 4.5rem;
-  padding-bottom: 1.8rem;
+  padding-bottom: 3.8rem;
 }
 .company-description {
   display: flex;
   flex-direction: column;
 
-  margin-top: 1rem;
+  align-self: start;
+
   grid-column: 1 / span 2;
   grid-row: 2 / span 1;
 
   gap: 2rem;
+  justify-content: flex-start; /* Adjust alignment */
+  align-items: flex-start;
+  margin-top: 0.8rem;
 }
 .description-text {
 }
@@ -214,16 +216,20 @@ main {
 .other-details {
   grid-column: 3 / span 2;
   grid-row: 2 / span 1;
-  column-gap: 4rem;
-  row-gap: 1rem;
+  column-gap: 8rem;
+  row-gap: 2rem;
   display: grid;
   grid-template-columns: repeat(2, min-content);
-
+  grid-template-rows: repeat(4, min-content);
   justify-items: center;
   align-items: center;
+  margin-top: 0.8rem;
 }
 .other-details p {
   display: block;
+}
+.other-details p:nth-child(odd) {
+  color: #bebebe;
 }
 
 .position-title {
@@ -269,6 +275,7 @@ main {
   grid-column: 6 / span 3;
   grid-row: 2 / span 1;
   line-height: 1.8;
+  color: #bebebe;
 }
 /*  */
 /* SECTION EXPERIENCE END */
@@ -314,44 +321,57 @@ main {
 /*  */
 .section-about-me {
   background-color: #222831;
-  margin: 0 6.4rem 0 6.4rem;
   color: #eeeeee;
-  line-height: 1.8;
+  margin: 0 6.4rem 0 6.4rem;
 }
-.about-me-container {
+
+.about-me-heading {
+  font-size: 6.4rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-.about-me-details {
+.about-me {
   display: grid;
   row-gap: 0px;
   column-gap: 2rem;
+  line-height: 1.4;
+
+  align-content: start;
 }
+
 .about-me-header {
   font-size: 3rem;
-  padding-bottom: 2.4rem;
+  font-weight: 500;
   grid-column: 1 / span 4;
+  align-self: flex-start;
 }
 
 .about-me-text {
-  font-size: 1.8rem;
-  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #bebebe;
   margin-bottom: 2.4rem;
   grid-column: 6 / span 3;
   grid-row: 1 / span 2;
+  line-height: 1.8;
+  margin-top: 1.2rem;
 }
 .about-me-certificates {
   display: flex;
   gap: 0rem;
   flex-direction: column;
-  align-self: end;
+  align-self: center;
 
   grid-column: 1 / span 3;
   grid-row: 2 / span 1;
 }
-.about-me-certificates .experience-line-break {
+.about-me-certificates .line-break {
   margin-bottom: 0px;
 }
 .about-me-certificates h3 {
   font-size: 3rem;
+  font-weight: 600;
 }
 .container {
   display: grid;
@@ -359,6 +379,8 @@ main {
 }
 .container p {
   font-size: 1.6rem;
+  font-weight: 400;
+  color: #bebebe;
 }
 
 .cert-udemy-2 {
@@ -403,7 +425,7 @@ main {
   background-color: #222831;
   padding: 0 6.4rem 0 6.4rem;
 }
-.projects-container {
+.projects {
   display: flex;
   flex-direction: column;
   row-gap: 11rem;
@@ -418,6 +440,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  align-self: flex-start;
 }
 .project-heading p {
   font-size: 1.6rem;
@@ -457,7 +481,8 @@ main {
 }
 .project-description {
   font-size: 1.6rem;
-  line-height: 1.6;
+  line-height: 1.8;
+  color: #bebebe;
 }
 .img-buttons {
   /* grid col */
@@ -547,8 +572,8 @@ main {
 /* LINEBREAK */
 .contact-email a:link .line-break,
 .contact-email a:visited .line-break {
-  height: 0.25rem;
-  background-color: #eeeeee;
+  height: 0.2rem;
+  background-color: #bebebe;
   position: relative;
   overflow: hidden;
 }
@@ -577,6 +602,7 @@ main {
   align-items: center;
 }
 .extra-details p {
+  color: #bebebe;
   font-size: 1.6rem;
 }
 .outlinks {
@@ -626,6 +652,20 @@ main {
 
 .grid--2-rows {
   grid-template-rows: repeat(2, auto);
+}
+
+.heading {
+  font-size: 6.4rem;
+  margin-bottom: 3rem;
+
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.line-break {
+  margin-bottom: 6.4rem;
+  background-color: #383e46;
+  border: none;
+  height: 0.2rem;
 }
 
 /*
