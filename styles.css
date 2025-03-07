@@ -43,10 +43,6 @@ main {
 
   padding: 4rem 6.4rem 4rem 6.4rem;
 }
-.header .header-text,
-.header .header-links {
-  margin: 0 2.4rem;
-}
 .header-img-logo {
   width: 6rem;
   fill: #eeeeee;
@@ -65,20 +61,17 @@ main {
 .logo-button:active {
   fill: #76abae;
 }
-.header-text {
-  align-self: center;
-}
+
 .header-links {
   display: flex;
-  gap: 2.4rem;
+  /* gap: 2.4rem; */
   justify-content: space-between;
-  align-content: ceter;
-  grid-column: 4/7;
+  align-self: center;
+  grid-column: 4 / span 3;
   font-weight: 400;
 }
 .header-link {
   text-transform: uppercase;
-  align-self: center;
 }
 .header-link:link,
 .header-link:visited {
@@ -91,6 +84,7 @@ main {
   height: 0.2rem;
   border: none;
   margin-top: 0.5rem;
+  margin-bottom: 0rem;
   background-color: #bebebe;
   position: relative;
   overflow: hidden;
