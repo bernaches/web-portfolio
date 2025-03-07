@@ -10,6 +10,11 @@ const changeFavicon = () => {
 };
 changeFavicon();
 
+// const logoButton = document.getElementById("darkmode");
+// logoButton.addEventListener("click", () => {
+//   console.log("hi");
+// });
+
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize all carousels
   const carousels = document.querySelectorAll(".project-screenshot");
