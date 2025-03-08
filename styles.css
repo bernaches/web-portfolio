@@ -54,8 +54,6 @@ main {
   align-self: center;
   justify-self: start;
 }
-.svg-logo {
-}
 .logo-button:link,
 .logo-button:visited {
   fill: #eeeeee;
