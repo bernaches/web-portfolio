@@ -43,15 +43,18 @@ main {
 
   padding: 4rem 6.4rem 4rem 6.4rem;
 }
-.header-img-logo {
-  width: 6rem;
-  fill: #eeeeee;
-}
+
 .logo-button {
-  width: 6rem;
-  height: 6rem;
-  align-self: flex-start;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  width: 20%; /* Set a width (adjust as needed) */
+  height: 20%; /* Set a height (adjust as needed) */
+
+  align-self: center;
   justify-self: start;
+}
+.svg-logo {
 }
 .logo-button:link,
 .logo-button:visited {
@@ -71,6 +74,7 @@ main {
   font-weight: 400;
 }
 .header-link {
+  padding: 0rem;
   text-transform: uppercase;
 }
 .header-link:link,
