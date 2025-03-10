@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #222831;
+  --primary-text-color: #eeeeee;
+  --secondary-text-color: #bebebe;
+  --secondary-color: #76abae;
+
+  --border-color: #09090b;
+  --line-break-color: #383e46;
+}
 
 html {
   /* font-size: 10px; */
@@ -18,8 +27,8 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #eeeeee;
-  background-color: #222831;
+  color: var(--primary-text-color);
+  background-color: var(--primary-color);
 }
 
 main {
@@ -35,7 +44,7 @@ main {
 .header {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  background-color: #222831;
+  background-color: var(--primary-color);
 
   font-size: 1.8rem;
 
@@ -53,14 +62,16 @@ main {
 
   align-self: center;
   justify-self: start;
+
+  fill: var(--primary-text-color);
 }
 .logo-button:link,
 .logo-button:visited {
-  fill: #eeeeee;
+  fill: var(--primary-text-color);
 }
 .logo-button:hover,
 .logo-button:active {
-  fill: #76abae;
+  fill: var(--secondary-color);
 }
 
 .header-links {
@@ -68,7 +79,9 @@ main {
   /* gap: 2.4rem; */
   justify-content: space-between;
   align-self: center;
-  grid-column: 4 / span 3;
+  /* justify-self: end; */
+
+  grid-column: 5 / span 2;
   font-weight: 400;
 }
 .header-link {
@@ -78,7 +91,7 @@ main {
 .header-link:link,
 .header-link:visited {
   text-decoration: none;
-  color: #eeeeee;
+  color: var(--primary-text-color);
   align-self: center;
 }
 .header-link:link .line-break,
@@ -87,14 +100,14 @@ main {
   border: none;
   margin-top: 0.5rem;
   margin-bottom: 0rem;
-  background-color: #bebebe;
+  background-color: var(--secondary-text-color);
   position: relative;
   overflow: hidden;
 }
 
 .header-link:hover,
 .header-link:active {
-  color: #76abae;
+  color: var(--secondary-color);
 }
 /* LINEBREAK */
 
@@ -103,7 +116,7 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #76abae;
+  background-color: var(--secondary-color);
   top: 0;
   right: 100%;
   transition: 0.8s;
@@ -123,7 +136,7 @@ main {
 /*  */
 
 .section-name-title {
-  background-color: #222831;
+  background-color: var(--primary-color);
   margin: 0 6.4rem 0 6.4rem;
 }
 
@@ -150,7 +163,7 @@ main {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.8;
-  color: #bebebe;
+  color: var(--secondary-text-color);
 }
 /*  */
 /* SECTION NAME TITLE END */
@@ -161,7 +174,7 @@ main {
 /*  */
 
 .section-experience {
-  background-color: #222831;
+  background-color: var(--primary-color);
   margin: 0 6.4rem 0 6.4rem;
 }
 
@@ -225,7 +238,7 @@ main {
   display: block;
 }
 .other-details p:nth-child(odd) {
-  color: #bebebe;
+  color: var(--secondary-text-color);
 }
 
 .position-title {
@@ -271,7 +284,7 @@ main {
   grid-column: 6 / span 3;
   grid-row: 2 / span 1;
   line-height: 1.8;
-  color: #bebebe;
+  color: var(--secondary-text-color);
 }
 /*  */
 /* SECTION EXPERIENCE END */
@@ -281,7 +294,7 @@ main {
 /* SECTION HERO START */
 /*  */
 .section-hero {
-  background-color: #222831;
+  background-color: var(--primary-color);
   margin: 0 0 0 0;
 }
 .hero {
@@ -316,8 +329,8 @@ main {
 /* SECTION ABOUT ME START */
 /*  */
 .section-about-me {
-  background-color: #222831;
-  color: #eeeeee;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
   margin: 0 6.4rem 0 6.4rem;
 }
 
@@ -346,7 +359,7 @@ main {
 .about-me-text {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #bebebe;
+  color: var(--secondary-text-color);
   margin-bottom: 2.4rem;
   grid-column: 6 / span 3;
   grid-row: 1 / span 2;
@@ -376,7 +389,7 @@ main {
 .container p {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #bebebe;
+  color: var(--secondary-text-color);
 }
 
 .cert-udemy-2 {
@@ -385,30 +398,30 @@ main {
 .linkedin-learning-logo {
   width: 15rem;
   height: 5rem;
-  fill: #eeeeee;
+  fill: var(--primary-text-color);
 }
 .udemy-logo {
-  fill: #eeeeee;
+  fill: var(--primary-text-color);
   width: 8rem;
   height: 5rem;
 }
 .view-my-works-btn:link,
 .view-my-works-btn:visited {
   display: inline-block;
-  background-color: #222831;
+  background-color: var(--primary-color);
   padding: 1.2rem 3.2rem;
 
   border-radius: 2.4rem;
 
   text-decoration: none;
-  color: #eeeeee;
+  color: var(--primary-text-color);
   font-size: 1.8rem;
   font-weight: 700;
 }
 .view-my-works-btn:hover,
 .view-my-works-btn:active {
-  color: #eeeeee;
-  background-color: #76abae;
+  color: var(--primary-text-color);
+  background-color: var(--secondary-color);
 }
 /*  */
 /* SECTION ABOUT ME END */
@@ -418,7 +431,7 @@ main {
 /* SECTION PROJECTS START */
 /*  */
 .section-projects {
-  background-color: #222831;
+  background-color: var(--primary-color);
   padding: 0 6.4rem 0 6.4rem;
 }
 .projects {
@@ -455,7 +468,7 @@ main {
   padding: 2rem;
   position: relative;
   height: min-content;
-  background-color: #09090b;
+  background-color: var(--border-color);
 }
 
 .screenshot-img {
@@ -478,7 +491,7 @@ main {
 .project-description {
   font-size: 1.6rem;
   line-height: 1.8;
-  color: #bebebe;
+  color: var(--secondary-text-color);
 }
 .img-buttons {
   /* grid col */
@@ -558,11 +571,11 @@ main {
 .contact-email a:link,
 .contact-email a:visited {
   text-decoration: none;
-  color: #eeeeee;
+  color: var(--primary-text-color);
 }
 .contact-email a:hover,
 .contact-email a:active {
-  color: #76abae;
+  color: var(--secondary-color);
 }
 
 /* LINEBREAK */
@@ -570,7 +583,7 @@ main {
 .contact-email a:visited .line-break {
   margin: 0;
   height: 0.2rem;
-  background-color: #bebebe;
+  background-color: var(--secondary-text-color);
   position: relative;
   overflow: hidden;
 }
@@ -580,7 +593,7 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #76abae;
+  background-color: var(--secondary-color);
   top: 0;
   right: 100%;
   transition: 0.8s;
@@ -599,7 +612,7 @@ main {
   align-items: center;
 }
 .extra-details p {
-  color: #bebebe;
+  color: var(--secondary-text-color);
   font-size: 1.6rem;
 }
 .outlinks {
@@ -612,11 +625,11 @@ main {
 .links:link,
 .links:visited {
   text-decoration: none;
-  color: #eeeeee;
+  color: var(--secondary-text-color);
 }
 .links:hover,
 .links:active {
-  color: #76abae;
+  color: var(--secondary-color);
 }
 .footer-logo {
   width: 3.5rem;
@@ -660,11 +673,16 @@ main {
 }
 .line-break {
   margin-bottom: 6.4rem;
-  background-color: #383e46;
+  background-color: var(--line-break-color);
   border: none;
   height: 0.2rem;
 }
-
+.light-mode {
+  --primary-color: #eeeeee;
+  --primary-text-color: #222831;
+  --secondary-text-color: #495057;
+  --line-break-color: #dddddd;
+}
 /*
 
 TODO: ADD FILM GRAIN OVERLAY
