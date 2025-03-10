@@ -10,14 +10,16 @@ const changeFavicon = () => {
 };
 changeFavicon();
 
-// const logoButton = document.getElementById("darkmode");
-// logoButton.addEventListener("click", () => {
-//   console.log("hi");
-// });
-
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize all carousels
   const carousels = document.querySelectorAll(".project-screenshot");
+  const logoButton = document.querySelector(".logo-button");
+  const body = document.body;
+
+  logoButton.addEventListener("click", () => {
+    console.log("hi");
+    body.classList.toggle("light-mode");
+  });
 
   carousels.forEach((carousel) => {
     let imageIndex = 0;
