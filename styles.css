@@ -49,7 +49,7 @@ main {
 
   font-weight: 600;
 
-  padding: 4rem 6.4rem 4rem 6.4rem;
+  margin: 4rem 6.4rem 4rem 6.4rem;
 }
 
 .logo-button {
@@ -77,8 +77,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-self: center;
-
-  grid-column: 5 / span 2;
+  /* justify-self: end; */
+  grid-column: 5 / span 3;
   font-weight: 400;
 }
 .header-link {
@@ -165,6 +165,41 @@ main {
 }
 /*  */
 /* SECTION NAME TITLE END */
+/*  */
+
+/*  */
+/* SECTION HERO START */
+/*  */
+.section-hero {
+  background-color: var(--primary-color);
+  margin: 0 6.4rem 0 6.4rem;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.hero-img-box {
+  justify-self: end;
+}
+.hero-img {
+  width: 34rem;
+  height: 54rem;
+}
+.hero-title-box {
+  justify-self: start;
+}
+.hero-title {
+  font-size: 9.4rem;
+  font-weight: 700;
+}
+/*  */
+/* SECTION HERO END */
 /*  */
 
 /*  */
@@ -288,41 +323,6 @@ main {
 /*  */
 
 /*  */
-/* SECTION HERO START */
-/*  */
-.section-hero {
-  background-color: var(--primary-color);
-  margin: 0 0 0 0;
-}
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  gap: 3.2rem;
-}
-
-.hero-img-box {
-  justify-self: end;
-}
-.hero-img {
-  width: 34rem;
-  height: 54rem;
-}
-.hero-title-box {
-  justify-self: start;
-}
-.hero-title {
-  font-size: 9.4rem;
-  font-weight: 700;
-}
-/*  */
-/* SECTION HERO START */
-/*  */
-
-/*  */
 /* SECTION ABOUT ME START */
 /*  */
 .section-about-me {
@@ -429,7 +429,7 @@ main {
 /*  */
 .section-projects {
   background-color: var(--primary-color);
-  padding: 0 6.4rem 0 6.4rem;
+  margin: 0 6.4rem 0 6.4rem;
 }
 .projects {
   display: flex;
@@ -690,4 +690,11 @@ main {
 TODO: ADD FILM GRAIN OVERLAY
 
 TODO:implement smoother scroll
- */
+
+
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
