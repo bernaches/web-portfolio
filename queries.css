@@ -30,16 +30,81 @@
 
   /* hero */
   .hero-img {
-    width: 20rem;
+    width: 22rem;
     height: 34rem;
   }
   .hero-title {
     font-size: 7.2rem;
   }
+
+  /* about me */
+  .heading {
+    font-size: 4rem;
+  }
+
+  .about-me-header {
+    font-size: 2rem;
+  }
+
+  .about-me-text {
+    font-size: 1.4rem;
+  }
+
+  .about-me-certificates .container p {
+    font-size: 1.4rem;
+  }
+
+  .about-me-certificates h3 {
+    font-size: 2rem;
+  }
+
+  /* experience */
+  .company-name {
+    font-size: 2.8rem;
+  }
+
+  .company-description,
+  .other-details,
+  .responsibilities {
+    font-size: 1.4rem;
+  }
+
+  /* projects */
+  .heading-title {
+    font-size: 1.6rem;
+  }
+
+  .project-heading p {
+    font-size: 1.4rem;
+  }
+
+  .project-description {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+  .img-buttons {
+    font-size: 1.4rem;
+  }
+
+  /* footer */
+  .title {
+    font-size: 7rem;
+  }
+  .contact-email a {
+    font-size: 2.6rem;
+    gap: 1.2rem;
+  }
+  .extra-details p {
+    font-size: 1.4rem;
+  }
+  .footer-logo {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
 }
 /* phone */
-@media (max-width: 90em) {
-}
+/* @media (max-width: 90em) {
+} */
 
 /*
 - Spacing system (px)
