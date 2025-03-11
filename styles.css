@@ -331,12 +331,6 @@ main {
   margin: 0 6.4rem 0 6.4rem;
 }
 
-.about-me-heading {
-  font-size: 6.4rem;
-  margin-bottom: 3rem;
-  text-transform: uppercase;
-  font-weight: 600;
-}
 .about-me {
   display: grid;
   row-gap: 0px;
@@ -631,6 +625,7 @@ main {
 .links:active {
   color: var(--secondary-color);
 }
+/* FIXME: Logo and anchor tag not centered */
 .footer-logo {
   width: 3.5rem;
   height: 3.5rem;
@@ -663,11 +658,9 @@ main {
 .grid--2-rows {
   grid-template-rows: repeat(2, auto);
 }
-
 .heading {
   font-size: 6.4rem;
   margin-bottom: 3rem;
-
   text-transform: uppercase;
   font-weight: 600;
 }
