@@ -1,11 +1,25 @@
 /* desktop 1440*/
 @media (max-width: 90em) {
+  /* header */
+  .logo-button {
+    width: 4.5rem;
+    height: auto;
+  }
+  .header .header-links {
+    font-size: 1.8rem;
+  }
+  .header-links {
+    grid-column: 7 / span 2;
+    justify-self: end;
+    gap: 2rem;
+  }
 }
 /* desktop 1024*/
 @media (max-width: 64em) {
   /* main */
   main {
     /* gap: 16rem; */
+    /* margin-top: 12rem; */
   }
   /* header */
   .header {
@@ -22,10 +36,12 @@
     margin: 0 4.4rem 0 4.4rem;
   }
   .section-name-title h1 {
-    font-size: 14rem;
+    font-size: 15rem;
   }
   .title-description {
-    font-size: 1.4rem;
+    margin-top: 5rem;
+    grid-column: span 5;
+    font-size: 1.6rem;
   }
 
   /* hero */
@@ -103,8 +119,21 @@
   }
 }
 /* phone */
-/* @media (max-width: 90em) {
-} */
+@media (max-width: 48em) {
+  /* name title */
+  .section-name-title h1 {
+    font-size: 9.5rem;
+  }
+  .title-description {
+    grid-column: 1 / span 6;
+  }
+  .grid {
+    row-gap: 4.6rem;
+  }
+  .title-description {
+    margin-top: 6rem;
+  }
+}
 
 /*
 - Spacing system (px)
