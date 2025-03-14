@@ -140,10 +140,10 @@ main {
   margin: 0 6.4rem 0 6.4rem;
 }
 
-.section-name-title h1 {
+.title-first-name,
+.title-last-name {
   font-size: 18rem;
 }
-
 .title-first-name {
   grid-column: 1 / span 2;
   align-self: center;
@@ -152,11 +152,11 @@ main {
 .title-last-name {
   grid-row: 2 / 2;
   grid-column: 8 / span 2;
-
   text-align: end;
   align-self: center;
   justify-self: end;
 }
+
 .title-description {
   grid-row: 3/3;
   grid-column: 1 / span 4;
