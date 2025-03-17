@@ -79,8 +79,9 @@ main {
   display: flex;
   justify-content: space-between;
   align-self: center;
-  /* justify-self: end; */
-  grid-column: 5 / span 3;
+  grid-column: 5 / span 2;
+  /* text-align: end; */
+  /* justify-self: self-end; */
   font-weight: 400;
 }
 .header-link {
@@ -139,27 +140,41 @@ main {
   background-color: var(--primary-color);
   margin: 0 6.4rem 0 6.4rem;
 }
+.name-title {
+  display: grid;
+  /* column-gap: 5.4rem; */
+  /* row-gap: 9.6rem; */
 
+  grid-template-columns: repeat(8, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+}
+.fullname {
+  justify-items: center;
+  align-items: center;
+  grid-column: span 8;
+
+  line-height: 1.4;
+}
 .title-first-name,
 .title-last-name {
   font-size: 18rem;
 }
 .title-first-name {
-  grid-column: 1 / span 2;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
   align-self: center;
-  justify-self: start;
 }
 .title-last-name {
-  grid-row: 2 / 2;
-  grid-column: 8 / span 2;
+  display: block;
+  width: 100%;
   text-align: end;
   align-self: center;
-  justify-self: end;
 }
 
 .title-description {
-  grid-row: 3/3;
-  grid-column: 1 / span 4;
+  margin-top: 8rem;
+  grid-column: span 3;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.8;
@@ -202,6 +217,104 @@ main {
 }
 /*  */
 /* SECTION HERO END */
+/*  */
+
+/*  */
+/* SECTION ABOUT ME START */
+/*  */
+.section-about-me {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  margin: 0 6.4rem 0 6.4rem;
+}
+
+.about-me {
+  display: grid;
+  row-gap: 0px;
+  column-gap: 2rem;
+  line-height: 1.4;
+
+  align-content: start;
+}
+
+.about-me-header {
+  font-size: 3rem;
+  font-weight: 500;
+  grid-column: 1 / span 4;
+  align-self: flex-start;
+}
+
+.about-me-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+  margin-bottom: 2.4rem;
+  grid-column: 6 / span 3;
+  grid-row: 1 / span 2;
+  line-height: 1.8;
+  margin-top: 1.2rem;
+}
+.about-me-certificates {
+  display: flex;
+  gap: 0rem;
+  flex-direction: column;
+  align-self: center;
+
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
+}
+.about-me-certificates .line-break {
+  margin-bottom: 0px;
+}
+.certificates-header {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cert-linkedin-1,
+.cert-udemy-1,
+.cert-udemy-2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+}
+
+.cert-udemy-2 {
+  grid-column: 2/3;
+}
+.linkedin-learning-logo {
+  width: 15rem;
+  height: 5rem;
+  fill: var(--primary-text-color);
+}
+.udemy-logo {
+  fill: var(--primary-text-color);
+  width: 8rem;
+  height: 5rem;
+}
+.view-my-works-btn:link,
+.view-my-works-btn:visited {
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 1.2rem 3.2rem;
+
+  border-radius: 2.4rem;
+
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.view-my-works-btn:hover,
+.view-my-works-btn:active {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-color);
+}
+/*  */
+/* SECTION ABOUT ME END */
 /*  */
 
 /*  */
@@ -268,9 +381,7 @@ main {
   align-items: center;
   margin-top: 0.8rem;
 }
-.other-details p {
-  display: block;
-}
+
 .other-details p:nth-child(odd) {
   color: var(--secondary-text-color);
 }
@@ -325,102 +436,6 @@ main {
 /*  */
 
 /*  */
-/* SECTION ABOUT ME START */
-/*  */
-.section-about-me {
-  background-color: var(--primary-color);
-  color: var(--primary-text-color);
-  margin: 0 6.4rem 0 6.4rem;
-}
-
-.about-me {
-  display: grid;
-  row-gap: 0px;
-  column-gap: 2rem;
-  line-height: 1.4;
-
-  align-content: start;
-}
-
-.about-me-header {
-  font-size: 3rem;
-  font-weight: 500;
-  grid-column: 1 / span 4;
-  align-self: flex-start;
-}
-
-.about-me-text {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--secondary-text-color);
-  margin-bottom: 2.4rem;
-  grid-column: 6 / span 3;
-  grid-row: 1 / span 2;
-  line-height: 1.8;
-  margin-top: 1.2rem;
-}
-.about-me-certificates {
-  display: flex;
-  gap: 0rem;
-  flex-direction: column;
-  align-self: center;
-
-  grid-column: 1 / span 3;
-  grid-row: 2 / span 1;
-}
-.about-me-certificates .line-break {
-  margin-bottom: 0px;
-}
-.about-me-certificates h3 {
-  font-size: 3rem;
-  font-weight: 600;
-}
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.container p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--secondary-text-color);
-}
-
-.cert-udemy-2 {
-  grid-column: 2/3;
-}
-.linkedin-learning-logo {
-  width: 15rem;
-  height: 5rem;
-  fill: var(--primary-text-color);
-}
-.udemy-logo {
-  fill: var(--primary-text-color);
-  width: 8rem;
-  height: 5rem;
-}
-.view-my-works-btn:link,
-.view-my-works-btn:visited {
-  display: inline-block;
-  background-color: var(--primary-color);
-  padding: 1.2rem 3.2rem;
-
-  border-radius: 2.4rem;
-
-  text-decoration: none;
-  color: var(--primary-text-color);
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-.view-my-works-btn:hover,
-.view-my-works-btn:active {
-  color: var(--primary-text-color);
-  background-color: var(--secondary-color);
-}
-/*  */
-/* SECTION ABOUT ME END */
-/*  */
-
-/*  */
 /* SECTION PROJECTS START */
 /*  */
 .section-projects {
@@ -445,7 +460,8 @@ main {
 
   align-self: flex-start;
 }
-.project-heading p {
+.heading-info,
+.heading-info-date {
   font-size: 1.6rem;
 }
 .heading-title {
