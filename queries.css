@@ -4,3 +4,56 @@
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
+/* 2179 */
+@media screen and (max-width: 136em) {
+  main {
+    /* gap: 25rem; */
+  }
+  .header {
+    margin: 4rem 30rem 4rem 30rem;
+  }
+  .section-name-title,
+  .section-hero,
+  .section-about-me,
+  .section-experience,
+  .section-projects,
+  .section-contact-me {
+    margin: 0 30rem 0 30rem;
+  }
+}
+/* 1779 */
+@media screen and (max-width: 112em) {
+  main {
+    /* gap: 25rem; */
+  }
+  .header {
+    margin: 4rem 15rem 4rem 15rem;
+  }
+  .section-name-title,
+  .section-hero,
+  .section-about-me,
+  .section-experience,
+  .section-projects,
+  .section-contact-me {
+    margin: 0 15rem 0 15rem;
+  }
+}
+/* 1440 */
+@media screen and (max-width: 90em) {
+  main {
+    /* gap: 25rem; */
+  }
+  .header {
+    margin: 4rem 6.4rem 4rem 6.4rem;
+  }
+  .section-name-title,
+  .section-hero,
+  .section-about-me,
+  .section-experience,
+  .section-projects {
+    margin: 0 6.4rem 0 6.4rem;
+  }
+  .section-contact-me {
+    margin: 0 6.4rem 6.4rem 6.4rem;
+  }
+}
