@@ -47,11 +47,10 @@ main {
   background-color: var(--primary-color);
 
   font-size: 1.8rem;
-
   font-weight: 600;
 
-  /* margin: 4rem 6.4rem 4rem 6.4rem; */
-  margin: 4rem 50rem 4rem 50rem;
+  margin: 4rem auto 4rem auto;
+  max-width: 154.5rem;
 }
 
 .logo-button {
@@ -59,7 +58,6 @@ main {
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
   width: 4.85rem;
-  /* width: 20%; */
   height: auto;
 
   align-self: center;
@@ -140,26 +138,24 @@ main {
 
 .section-name-title {
   background-color: var(--primary-color);
-  margin: 0 50rem 0 50rem;
+  margin: 0 auto;
 }
 .name-title {
   display: grid;
-  /* column-gap: 5.4rem; */
-  /* row-gap: 9.6rem; */
-
   grid-template-columns: repeat(8, 1fr);
-  /* grid-template-rows: repeat(3, 1fr); */
+  max-width: 154.5rem;
 }
 .fullname {
   justify-items: center;
   align-items: center;
   grid-column: span 8;
-
   line-height: 1.4;
 }
 .title-first-name,
 .title-last-name {
+  flex-shrink: 0;
   font-size: 18rem;
+  white-space: nowrap;
 }
 .title-first-name {
   display: block;
@@ -176,7 +172,7 @@ main {
 
 .title-description {
   margin-top: 8rem;
-  grid-column: span 3;
+  grid-column: span 4;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.8;
@@ -191,7 +187,7 @@ main {
 /*  */
 .section-hero {
   background-color: var(--primary-color);
-  margin: 0 50rem 0 50rem;
+  margin: 0 auto;
 }
 .hero {
   display: grid;
@@ -201,6 +197,7 @@ main {
   justify-items: center;
   align-items: center;
   gap: 3.2rem;
+  max-width: 154.5rem;
 }
 
 .hero-img-box {
@@ -227,13 +224,14 @@ main {
 .section-about-me {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
-  margin: 0 50rem 0 50rem;
+  margin: 0 auto;
 }
 
 .about-me {
   display: grid;
   row-gap: 0px;
   column-gap: 2rem;
+  max-width: 154.5rem;
   line-height: 1.4;
 
   align-content: start;
@@ -325,7 +323,7 @@ main {
 
 .section-experience {
   background-color: var(--primary-color);
-  margin: 0 50rem 0 50rem;
+  margin: 0 auto;
 }
 
 .experience {
@@ -333,6 +331,7 @@ main {
   flex-direction: column;
   gap: 7.6rem;
   font-size: 1.6rem;
+  max-width: 154.5rem;
 }
 .experience-details {
   display: grid;
@@ -442,7 +441,7 @@ main {
 /*  */
 .section-projects {
   background-color: var(--primary-color);
-  margin: 0 50rem 0 50rem;
+  margin: 0 auto;
 }
 .projects {
   display: flex;
@@ -451,7 +450,7 @@ main {
 }
 .project-content {
   display: grid;
-
+  max-width: 154.5rem;
   row-gap: 3rem;
   column-gap: 3rem;
 }
@@ -563,7 +562,8 @@ main {
 /* SECTION FOOTER START */
 /*  */
 .section-contact-me {
-  margin: 0 50rem 4rem 50rem;
+  margin: 0 auto;
+  max-width: 154.5rem;
 }
 .contact-me-details {
   display: flex;
