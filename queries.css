@@ -4,30 +4,14 @@
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
-/* 2179 */
-@media screen and (max-width: 136em) {
-  main {
-    /* gap: 25rem; */
-  }
-  .header {
-    margin: 4rem 30rem 4rem 30rem;
-  }
-  .section-name-title,
-  .section-hero,
-  .section-about-me,
-  .section-experience,
-  .section-projects,
-  .section-contact-me {
-    margin: 0 30rem 0 30rem;
-  }
-}
+
 /* 1779 */
-@media screen and (max-width: 112em) {
+@media screen and (max-width: 105.5em) {
   main {
     /* gap: 25rem; */
   }
   .header {
-    margin: 4rem 15rem 4rem 15rem;
+    margin: 4rem 6.4rem 4rem 6.4rem;
   }
   .section-name-title,
   .section-hero,
@@ -35,13 +19,16 @@
   .section-experience,
   .section-projects,
   .section-contact-me {
-    margin: 0 15rem 0 15rem;
+    margin: 0 6.4rem 0 6.4rem;
   }
 }
 /* 1440 */
 @media screen and (max-width: 90em) {
-  main {
-    /* gap: 25rem; */
+  html {
+    /* font-size: 9px; */
+    /* 9px / 16px = 0.5625 = 56.25% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 56.25%;
   }
   .header {
     margin: 4rem 6.4rem 4rem 6.4rem;
@@ -53,7 +40,27 @@
   .section-projects {
     margin: 0 6.4rem 0 6.4rem;
   }
+  .container {
+    gap: 2rem;
+  }
   .section-contact-me {
     margin: 0 6.4rem 6.4rem 6.4rem;
+  }
+}
+
+/* 1024 */
+@media screen and (max-width: 64em) {
+  /* name title */
+  .title-description {
+    grid-column: span 6;
+  }
+  /* hero */
+  .hero-img {
+    width: 24rem;
+    height: 38rem;
+  }
+  .hero-title {
+    font-size: 7rem;
+    font-weight: 700;
   }
 }
