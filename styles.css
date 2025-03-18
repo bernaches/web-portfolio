@@ -229,6 +229,9 @@ main {
 
 .about-me {
   display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, auto);
+
   row-gap: 0px;
   column-gap: 2rem;
   max-width: 154.5rem;
@@ -335,6 +338,8 @@ main {
 }
 .experience-details {
   display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, auto);
 
   row-gap: 0rem;
   column-gap: 5.8rem;
@@ -450,6 +455,8 @@ main {
 }
 .project-content {
   display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, auto);
   max-width: 154.5rem;
   row-gap: 3rem;
   column-gap: 3rem;
@@ -597,7 +604,7 @@ main {
 .contact-email a:link .line-break,
 .contact-email a:visited .line-break {
   margin: 0;
-  height: 0.2rem;
+  height: 0.3rem;
   background-color: var(--secondary-text-color);
   position: relative;
   overflow: hidden;
@@ -645,7 +652,7 @@ main {
 .links:active {
   color: var(--secondary-color);
 }
-/* FIXME: Logo and anchor tag not centered */
+
 .footer-logo {
   width: 3.5rem;
   height: 3.5rem;
