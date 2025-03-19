@@ -5,21 +5,23 @@
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
-/* 1779 */
-@media screen and (max-width: 105.5em) {
+/* 1860 */
+@media screen and (max-width: 116.25em) {
   main {
     /* gap: 25rem; */
   }
   .header {
-    margin: 4rem 6.4rem 4rem 6.4rem;
+    margin: 4rem 15rem 4rem 15rem;
   }
   .section-name-title,
   .section-hero,
   .section-about-me,
   .section-experience,
-  .section-projects,
+  .section-projects {
+    margin: 0 15rem 0 15rem;
+  }
   .section-contact-me {
-    margin: 0 6.4rem 0 6.4rem;
+    margin: 0 15rem 4rem 15rem;
   }
 }
 /* 1440 */
@@ -31,33 +33,54 @@
     font-size: 56.25%;
   }
   .header {
-    margin: 4rem 6.4rem 4rem 6.4rem;
+    margin: 4rem 15rem 4rem 15rem;
   }
   .section-name-title,
   .section-hero,
   .section-about-me,
   .section-experience,
   .section-projects {
-    margin: 0 6.4rem 0 6.4rem;
+    margin: 0 15rem 0 15rem;
   }
   .container {
     gap: 2rem;
   }
   .section-contact-me {
-    margin: 0 6.4rem 6.4rem 6.4rem;
+    margin: 0 15rem 6.4rem 15rem;
   }
 }
 
 /* 1024 */
 @media screen and (max-width: 64em) {
-  html {
-    /* font-size: 8px; */
-    /* 8px / 16px = 0.5 = 50% */
-    /* Percentage of user's browser font-size setting */
-    font-size: 50%;
+  .header {
+    margin: 4rem 6.4rem 4rem 6.4rem;
   }
+  main {
+    /* gap: 30rem; */
+  }
+  .section-name-title,
+  .section-hero,
+  .section-about-me,
+  .section-experience,
+  .section-projects {
+    margin: 8rem 6.4rem 8rem 6.4rem;
+  }
+
+  .section-contact-me {
+    margin: 0 6.4rem 6.4rem 6.4rem;
+  }
+
   /* name title */
+  .name-title {
+    /* margin-top: 8rem; */
+    /* row-gap: 10rem; */
+  }
+  .title-first-name,
+  .title-last-name {
+    font-size: 15rem;
+  }
   .title-description {
+    margin-top: 15rem;
     grid-column: span 6;
   }
   /* hero */
@@ -69,90 +92,115 @@
     font-size: 7rem;
     font-weight: 700;
   }
-}
-
-/* 860 */
-@media screen and (max-width: 48em) {
-  /* name title */
-  .name-title {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .title-description {
-    grid-column: span 4;
-  }
-  /* about me */
-  .about-me {
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 3rem;
-  }
-  .about-me-header {
-    grid-column: 1 / span 3;
-  }
-  .about-me-text {
-    grid-column: 4 / span 3;
-    grid-row: 1 / span 2;
-  }
-
-  /* experience   */
-  .experience-details {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
+  /* experience */
   .other-details {
-    grid-column: 4 / span 2;
-  }
-  .responsibilities {
-    grid-column: 1 / span 3;
-    grid-row: 3;
+    grid-column: 3 / span 2;
+    column-gap: 4rem;
+    grid-row: 2 / span 2;
   }
 
   /* projects */
-  .project-content {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
   .left-to-right {
     .project-heading {
-      grid-column: 1 / span 2;
-      grid-row: 1/2;
+      /* grid-column: 1 / span 2;
+      grid-row: 1/2; */
     }
     .project-description {
       grid-column: 1 / span 3;
-      grid-row: 2 / span 1;
+      grid-row: 2 / span 2;
     }
     .project-screenshot {
-      grid-column: 4 / span 3;
+      grid-column: 5 / span 4;
       grid-row: 1 / span 2;
     }
   }
 
   .right-to-left {
     .project-heading {
-      grid-column: 5 / span 2;
+      grid-column: 6 / span 2;
       grid-row: 1/2;
     }
     .project-description {
-      grid-column: 4 / span 3;
+      grid-column: 6 / span 3;
       grid-row: 2 / span 1;
     }
     .project-screenshot {
-      grid-column: 1 / span 3;
+      grid-column: 1 / span 4;
       grid-row: 1 / span 2;
     }
   }
+}
 
-  /* .project-description {
-    grid-column: span 3;
+/* 768 tablet put html resizing here*/
+@media screen and (max-width: 48em) {
+  html {
+    /* font-size: 7px; */
+    /* 7px / 16px = 0.4375 = 43.75% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 43.75%;
   }
-  .project-screenshot {
-    grid-column: 4 / span 3;
-  } */
+  .section-name-title,
+  .section-hero,
+  .section-about-me,
+  .section-experience,
+  .section-projects {
+    margin: 13rem 6.4rem 13rem 6.4rem;
+  }
 
-  /* contact me */
-  .contact-email {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    row-gap: 5rem;
+  .section-contact-me {
+    margin: 0 6.4rem 6.4rem 6.4rem;
+  }
+
+  /* name title */
+  .name-title {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fullname {
+    margin: 10rem 0 10rem 0;
+  }
+  .title-first-name,
+  .title-last-name {
+  }
+  .title-description {
+    margin-top: 20rem;
+  }
+
+  /* about me */
+  .about-me {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+  }
+  .about-me-header {
+    grid-column: 1/1;
+    grid-row: 1 / span 1;
+  }
+  .about-me-text {
+    grid-column: 1/1;
+    grid-row: 2 / span 1;
+  }
+  .about-me-certificates {
+    grid-column: 1/1;
+    grid-row: 3 / span 1;
+  }
+
+  /* experience */
+  .experience-details {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  .company-name,
+  .company-description,
+  .other-details,
+  .responsibilities {
+    grid-column: 1;
+  }
+  .company-description {
+    grid-row: 2;
+  }
+  .responsibilities {
+    grid-row: 3;
+  }
+  .other-details {
+    grid-row: 4;
   }
 }
