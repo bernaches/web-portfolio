@@ -378,10 +378,11 @@ main {
 .other-details {
   grid-column: 3 / span 2;
   grid-row: 2 / span 1;
+
+  display: grid;
   column-gap: 8rem;
   row-gap: 2rem;
-  display: grid;
-  grid-template-columns: repeat(2, min-content);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, min-content);
   justify-items: center;
   align-items: center;
@@ -390,6 +391,13 @@ main {
 
 .other-details p:nth-child(odd) {
   color: var(--secondary-text-color);
+  text-align: left;
+  justify-self: start;
+}
+.other-details p:nth-child(even) {
+  /* text-align: right; */
+  justify-self: end;
+  white-space: nowrap;
 }
 
 .position-title {
@@ -406,9 +414,6 @@ main {
 }
 .location {
   grid-column: 2 / span 1;
-  justify-self: end;
-  white-space: nowrap;
-  text-align: right;
 }
 
 .industry-title {
@@ -417,8 +422,6 @@ main {
 .industry {
   grid-column: 2 / span 1;
   grid-row: 3 /3;
-  white-space: nowrap;
-  justify-self: end;
 }
 
 .website-title {
@@ -427,14 +430,13 @@ main {
 
 .website {
   grid-column: 2 / 2;
-  white-space: nowrap;
-  justify-self: end;
 }
 
 .responsibilities {
   grid-column: 6 / span 3;
   grid-row: 2 / span 1;
   line-height: 1.8;
+  text-align: justify;
   color: var(--secondary-text-color);
 }
 /*  */
@@ -509,6 +511,7 @@ main {
   font-size: 1.6rem;
   line-height: 1.8;
   color: var(--secondary-text-color);
+  text-align: justify;
 }
 .img-buttons {
   /* grid col */
