@@ -15,6 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const carousels = document.querySelectorAll(".project-screenshot");
   const logoButton = document.querySelector(".logo-button");
   const body = document.body;
+  const btnNavEl = document.querySelector(".btn-mobile-nav");
+  const headerEl = document.querySelector(".header");
+
+  btnNavEl.addEventListener("click", () => {
+    headerEl.classList.toggle("nav-open");
+  });
 
   logoButton.addEventListener("click", () => {
     console.log("hi");

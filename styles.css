@@ -19,7 +19,6 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
 
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -127,6 +126,29 @@ main {
   right: 0%;
 }
 /* LINEBREAK */
+
+/* mobile nav */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  grid-column: 8;
+  align-self: center;
+  justify-self: center;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--primary-text-color);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
 
 /*  */
 /* HEADER END */
@@ -713,6 +735,7 @@ main {
 TODO: ADD FILM GRAIN OVERLAY
 
 TODO:implement smoother scroll
+FINISH MEDIA QUERIES
 
 
 
