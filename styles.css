@@ -1,11 +1,23 @@
 :root {
+  /* color palette */
   --primary-color: #222831;
   --primary-text-color: #eeeeee;
   --secondary-text-color: #bebebe;
   --secondary-color: #76abae;
-
   --border-color: #09090b;
   --line-break-color: #383e46;
+
+  /* font weight */
+  --normal: 400;
+  --bold: 600;
+  --extra-bold: 700;
+
+  /* text */
+  /* --heading-1
+  --sub-heading-1
+  --heading-2
+  --sub-heading-2
+  --text */
 }
 * {
   margin: 0;
@@ -46,7 +58,7 @@ main {
   background-color: var(--primary-color);
 
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: var(--bold);
 
   margin: 4rem auto 4rem auto;
   max-width: 154.5rem;
@@ -77,7 +89,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-self: center;
-  font-weight: 400;
+  font-weight: var(--normal);
 
   grid-column: 7 / span 1;
   justify-self: end;
@@ -172,31 +184,25 @@ main {
   align-items: center;
   grid-column: span 8;
   line-height: 1.4;
+  font-size: 18rem;
 }
 .title-first-name,
 .title-last-name {
-  flex-shrink: 0;
-  font-size: 18rem;
-  white-space: nowrap;
-}
-.title-first-name {
   display: block;
   width: 100%;
+  flex-shrink: 0;
   white-space: nowrap;
   align-self: center;
 }
 .title-last-name {
-  display: block;
-  width: 100%;
   text-align: end;
-  align-self: center;
 }
 
 .title-description {
   margin-top: 8rem;
   grid-column: span 4;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.8;
   color: var(--secondary-text-color);
 }
@@ -221,7 +227,6 @@ main {
   gap: 3.2rem;
   max-width: 154.5rem;
 }
-
 .hero-img-box {
   justify-self: end;
 }
@@ -270,13 +275,9 @@ main {
 }
 
 .about-me-text {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--secondary-text-color);
   margin-bottom: 2.4rem;
   grid-column: 6 / span 3;
   grid-row: 1 / span 2;
-  line-height: 1.8;
   margin-top: 1.2rem;
 }
 .about-me-certificates {
@@ -299,11 +300,13 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.about-me-text,
 .cert-linkedin-1,
 .cert-udemy-1,
 .cert-udemy-2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
+  line-height: 1.8;
   color: var(--secondary-text-color);
 }
 
@@ -355,8 +358,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 7.6rem;
-  font-size: 1.6rem;
   max-width: 154.5rem;
+
+  font-size: 1.8rem;
+  line-height: 1.6;
 }
 .experience-details {
   display: grid;
@@ -365,8 +370,6 @@ main {
 
   row-gap: 0rem;
   column-gap: 5.8rem;
-
-  font-size: 1.6rem;
 }
 .company-name {
   white-space: nowrap;
@@ -457,7 +460,6 @@ main {
 .responsibilities {
   grid-column: 6 / span 3;
   grid-row: 2 / span 1;
-  line-height: 1.8;
   text-align: justify;
   color: var(--secondary-text-color);
 }
@@ -489,15 +491,15 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
   align-self: flex-start;
 }
-.heading-info,
-.heading-info-date {
-  font-size: 1.6rem;
-}
 .heading-title {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+.heading-info,
+.heading-info-date,
+.project-description {
+  font-size: 1.8rem;
 }
 .project-screenshot {
   display: flex;
@@ -530,7 +532,6 @@ main {
   z-index: 1;
 }
 .project-description {
-  font-size: 1.6rem;
   line-height: 1.8;
   color: var(--secondary-text-color);
   text-align: justify;
