@@ -55,9 +55,6 @@
   .header {
     margin: 4rem 6.4rem 4rem 6.4rem;
   }
-  main {
-    /* gap: 30rem; */
-  }
   .section-name-title,
   .section-hero,
   .section-about-me,
@@ -71,14 +68,6 @@
   }
 
   /* name title */
-  .name-title {
-    /* margin-top: 8rem; */
-    /* row-gap: 10rem; */
-  }
-  .title-first-name,
-  .title-last-name {
-    font-size: 15rem;
-  }
   .title-description {
     margin-top: 15rem;
     grid-column: span 6;
@@ -87,10 +76,6 @@
   .hero-img {
     width: 24rem;
     height: 38rem;
-  }
-  .hero-title {
-    font-size: 7rem;
-    font-weight: 700;
   }
   /* experience */
   .other-details {
@@ -101,10 +86,6 @@
 
   /* projects */
   .left-to-right {
-    .project-heading {
-      /* grid-column: 1 / span 2;
-      grid-row: 1/2; */
-    }
     .project-description {
       grid-column: 1 / span 3;
       grid-row: 2 / span 2;
@@ -133,6 +114,13 @@
 
 /* 768 tablet put html resizing here*/
 @media screen and (max-width: 48em) {
+  :root {
+    /* text */
+    --heading-3: 5.4rem;
+    --heading-4: 4rem;
+    --heading-5: 3rem;
+    --text-normal: 2.1rem;
+  }
   html {
     /* font-size: 7px; */
     /* 7px / 16px = 0.4375 = 43.75% */
@@ -217,19 +205,28 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, min-content);
   }
-  .about-me-header {
+  .about-me-quote {
     grid-column: 1/1;
     grid-row: 1 / span 1;
   }
   .about-me-text {
     grid-column: 1/1;
     grid-row: 2 / span 1;
+    margin: 6rem 0;
   }
   .about-me-certificates {
     grid-column: 1/1;
     grid-row: 3 / span 1;
   }
-
+  .linkedin-learning-logo {
+    width: 30rem;
+  }
+  .udemy-logo {
+    width: 13rem;
+  }
+  .container {
+    margin-top: 2rem;
+  }
   /* experience */
   .experience-details {
     grid-template-columns: repeat(1, 1fr);
@@ -246,9 +243,13 @@
   }
   .responsibilities {
     grid-row: 3;
+    margin-top: 3rem;
   }
   .other-details {
+    margin-top: 3rem;
     grid-row: 4;
+    column-gap: 0rem;
+    row-gap: 1rem;
   }
 
   /* projects */
@@ -284,7 +285,56 @@
       grid-row: 1 / span 2;
     }
   }
+
+  .contact-email {
+    gap: 2.5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 @media screen and (max-width: 38em) {
+  :root {
+    --heading-1: 10rem;
+    --heading-2: 6rem;
+  }
+
+  .hero {
+    gap: 1rem;
+  }
+
+  .project-content {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+  .left-to-right,
+  .right-to-left {
+    .project-heading {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+    .project-description {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+    .project-screenshot {
+      grid-column: 1/2;
+      grid-row: 2 / 3;
+    }
+    .img-buttons {
+      font-size: var(--text-normal);
+    }
+    .button {
+      font-size: 3rem;
+    }
+  }
+}
+@media screen and (max-width: 26.56em) {
+  html {
+    /* font-size: 6px; */
+    /* 6px / 16px = 0.375 = 37.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 37.5%;
+  }
 }
