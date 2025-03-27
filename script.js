@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   logoButton.addEventListener("click", () => {
-    console.log("hi");
     body.classList.toggle("light-mode");
   });
 
