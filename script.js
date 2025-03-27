@@ -1,5 +1,4 @@
 "use strict";
-import "ionicons";
 const faviconTag = document.getElementById("favicon-logo");
 const isDark = window.matchMedia("(prefers-color-scheme: dark)");
 const changeFavicon = () => {
