@@ -330,11 +330,24 @@
     }
   }
 }
-@media screen and (max-width: 26.56em) {
+@media screen and (max-width: 27em) {
   html {
     /* font-size: 6px; */
     /* 6px / 16px = 0.375 = 37.5% */
     /* Percentage of user's browser font-size setting */
     font-size: 37.5%;
+  }
+  .header {
+    margin: 4rem 2rem 4rem 2rem;
+  }
+  .section-name-title,
+  .section-hero,
+  .section-about-me,
+  .section-experience,
+  .section-projects {
+    margin: 0 2rem 0 2rem;
+  }
+  .section-contact-me {
+    margin: 0 2rem 4rem 2rem;
   }
 }
