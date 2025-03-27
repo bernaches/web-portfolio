@@ -7,9 +7,6 @@
 
 /* 1860 */
 @media screen and (max-width: 116.25em) {
-  main {
-    /* gap: 25rem; */
-  }
   .header {
     margin: 4rem 15rem 4rem 15rem;
   }
@@ -192,9 +189,6 @@
   }
   .fullname {
     margin: 10rem 0 10rem 0;
-  }
-  .title-first-name,
-  .title-last-name {
   }
   .title-description {
     margin-top: 10rem;
