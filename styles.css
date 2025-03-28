@@ -24,6 +24,9 @@
   /* line height */
   --line-height-normal: 1.8;
   --line-height-tight: 1.4;
+
+  /* grain */
+  --grain: 0%;
 }
 * {
   margin: 0;
@@ -54,14 +57,15 @@ html::after {
   height: 100%;
   z-index: -1;
 
-  opacity: 20%;
+  opacity: var(--grain);
 }
 html::before {
   background-color: var(--primary-color);
-  background: url(noise-grain.svg);
+  background: url(noise-grain-light.svg);
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   line-height: 1;
   font-weight: var(--normal);
   color: var(--primary-text-color);
@@ -253,7 +257,7 @@ body main {
 }
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: min-content min-content;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -733,10 +737,10 @@ body main {
 }
 .light-mode {
   --primary-color: #eeeeee;
-  --secondary-color: #dddddd;
   --primary-text-color: #222831;
   --secondary-text-color: #495057;
   --line-break-color: #dddddd;
+  --grain: 30%;
 }
 /*  */
 /* GENERAL END*/
