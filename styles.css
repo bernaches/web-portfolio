@@ -28,7 +28,7 @@
   /* grain */
   --grain: 0%;
 
-  --heading-style-h1: 25.2rem;
+  /* --heading-style-h1: 25.2rem;
   --heading-style-h2: 12.1rem;
   --heading-style-h3: 8.1rem;
   --heading-style-h4: 5.4rem;
@@ -38,7 +38,7 @@
   --text-size-medium: 0rem;
   --text-size-regular: 1.6rem;
   --text-size-small: 1rem;
-  --text-size-tiny: 0rem;
+  --text-size-tiny: 0rem; */
 }
 * {
   margin: 0;
@@ -216,7 +216,7 @@ body main {
 /*  */
 
 /*  */
-/* SECTION NAME TITLE START */
+/* SECTION HERO START */
 /*  */
 
 .section-name-title {
@@ -253,13 +253,13 @@ body main {
 }
 
 /*  */
-/* SECTION NAME TITLE END */
+/* SECTION HERO END */
 /*  */
 
 /*  */
 /* SECTION HERO START */
 /*  */
-.section-hero {
+/* .section-hero {
   margin: 0 auto;
 }
 .hero {
@@ -286,7 +286,7 @@ body main {
 .hero-title {
   font-size: var(--heading-2);
   font-weight: var(--bold);
-}
+} */
 /*  */
 /* SECTION HERO END */
 /*  */
