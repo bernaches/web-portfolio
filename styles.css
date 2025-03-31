@@ -13,7 +13,7 @@
   --extra-bold: 700;
 
   /* text */
-  --heading-1: 16rem;
+  --heading-1: 25rem;
   --heading-2: 9.4rem;
   /* --sub-heading-2 */
   --heading-3: 4.4rem;
@@ -28,7 +28,7 @@
   /* grain */
   --grain: 0%;
 
-  /* --heading-style-h1: 18.2rem;
+  --heading-style-h1: 25.2rem;
   --heading-style-h2: 12.1rem;
   --heading-style-h3: 8.1rem;
   --heading-style-h4: 5.4rem;
@@ -38,7 +38,7 @@
   --text-size-medium: 0rem;
   --text-size-regular: 1.6rem;
   --text-size-small: 1rem;
-  --text-size-tiny: 0rem; */
+  --text-size-tiny: 0rem;
 }
 * {
   margin: 0;
@@ -87,6 +87,7 @@ body {
 body main {
   display: flex;
   flex-direction: column;
+  margin-top: 30rem;
   gap: 14rem;
   margin-bottom: 22.4rem;
 }
@@ -220,43 +221,37 @@ body main {
 
 .section-name-title {
   margin: 0 auto;
+  max-width: 154.5rem;
+  width: 100%;
 }
 
 .name-title {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  max-width: 154.5rem;
 }
-.fullname {
-  justify-items: center;
-  align-items: center;
+.firstname-container {
   grid-column: span 8;
-  line-height: var(--line-height-tight);
-  font-size: var(--heading-1);
 
-  /* text-transform: uppercase;
-  font-weight: 200; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.title-first-name,
-.title-last-name {
-  display: block;
-  width: 100%;
-  flex-shrink: 0;
-  white-space: nowrap;
-  align-self: center;
+
+.firstname,
+.lastname {
+  line-height: 0.8; /* var this */
+  font-size: var(--heading-1);
 }
-.title-last-name {
+.lastname {
+  grid-column: span 8;
   text-align: end;
 }
+.job {
+  align-self: center;
+  justify-self: center;
 
-.title-description {
-  margin-top: 8rem;
-  grid-column: span 4;
-  font-weight: var(--normal);
-  font-size: var(--text-normal);
-  line-height: var(--line-height-normal);
-  color: var(--secondary-text-color);
+  font-size: 2.4rem;
 }
+
 /*  */
 /* SECTION NAME TITLE END */
 /*  */
@@ -638,7 +633,7 @@ body main {
 .contact-email a {
   font-size: var(--heading-4);
   display: grid;
-  gap: 1.8rem;
+  gap: 1.6rem;
   text-decoration: none;
 }
 /* https://www.youtube.com/shorts/sMkRZByYS6I */
