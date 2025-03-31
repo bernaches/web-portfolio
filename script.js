@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize all carousels
   const carousels = document.querySelectorAll(".project-screenshot");
   const logoButton = document.querySelector(".logo-button");
-  const body = document.body;
+  const html = document.documentElement;
   const btnNavEl = document.querySelector(".btn-mobile-nav");
   const headerEl = document.querySelector(".header");
 
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   logoButton.addEventListener("click", () => {
-    body.classList.toggle("light-mode");
+    html.classList.toggle("light-mode");
   });
 
   carousels.forEach((carousel) => {
