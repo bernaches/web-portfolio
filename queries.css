@@ -10,7 +10,6 @@
   .header {
     margin: 4rem 15rem 4rem 15rem;
   }
-  .section-name-title,
   .section-hero,
   .section-about-me,
   .section-experience,
@@ -20,19 +19,29 @@
   .section-contact-me {
     margin: 0 15rem 4rem 15rem;
   }
+
+  /* hero section */
+  .section-hero {
+    /* max-width: none; */
+  }
 }
 /* 1440 */
 @media screen and (max-width: 90em) {
+  :root {
+    --heading-1: 20rem;
+  }
   html {
     /* font-size: 9px; */
     /* 9px / 16px = 0.5625 = 56.25% */
     /* Percentage of user's browser font-size setting */
     font-size: 56.25%;
   }
+  body main {
+    margin-top: 42rem;
+  }
   .header {
     margin: 4rem 15rem 4rem 15rem;
   }
-  .section-name-title,
   .section-hero,
   .section-about-me,
   .section-experience,
@@ -49,15 +58,20 @@
 
 /* 1024 */
 @media screen and (max-width: 64em) {
+  :root {
+    --heading-1: 15rem;
+  }
+  body main {
+    margin-top: 52rem;
+  }
   .header {
     margin: 4rem 6.4rem 4rem 6.4rem;
   }
-  .section-name-title,
   .section-hero,
   .section-about-me,
   .section-experience,
   .section-projects {
-    margin: 8rem 6.4rem 8rem 6.4rem;
+    margin: 0rem 6.4rem 0rem 6.4rem;
   }
 
   .section-contact-me {
@@ -69,11 +83,7 @@
     margin-top: 15rem;
     grid-column: span 6;
   }
-  /* hero */
-  .hero-img {
-    width: 24rem;
-    height: 38rem;
-  }
+
   /* experience */
   .other-details {
     grid-column: 3 / span 2;
@@ -124,12 +134,14 @@
     /* Percentage of user's browser font-size setting */
     font-size: 43.75%;
   }
-  .section-name-title,
+  body main {
+    margin-top: 75rem;
+  }
   .section-hero,
   .section-about-me,
   .section-experience,
   .section-projects {
-    margin: 13rem 6.4rem 13rem 6.4rem;
+    margin: 0rem 6.4rem 0rem 6.4rem;
   }
 
   .section-contact-me {
@@ -183,15 +195,12 @@
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
+  .logo-button {
+    width: 7.85rem;
+  }
   /* name title */
   .name-title {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .fullname {
-    margin: 10rem 0 10rem 0;
-  }
-  .title-description {
-    margin-top: 10rem;
   }
 
   /* about me */
@@ -293,9 +302,8 @@
     --heading-1: 10rem;
     --heading-2: 6rem;
   }
-
-  .hero {
-    gap: 1rem;
+  body main {
+    margin-top: 85rem;
   }
 
   .project-content {
@@ -324,17 +332,19 @@
     }
   }
 }
-@media screen and (max-width: 27em) {
+@media screen and (max-width: 30.25em) {
   html {
     /* font-size: 6px; */
     /* 6px / 16px = 0.375 = 37.5% */
     /* Percentage of user's browser font-size setting */
     font-size: 37.5%;
   }
+  body main {
+    margin-top: 104rem;
+  }
   .header {
     margin: 4rem 2rem 4rem 2rem;
   }
-  .section-name-title,
   .section-hero,
   .section-about-me,
   .section-experience,
@@ -349,5 +359,11 @@
   }
   .hero {
     grid-template-columns: min-content;
+  }
+}
+
+@media screen and (max-width: 23.4375em) {
+  .job {
+    white-space: wrap;
   }
 }

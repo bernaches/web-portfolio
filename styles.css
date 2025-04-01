@@ -24,6 +24,7 @@
   /* line height */
   --line-height-normal: 1.8;
   --line-height-tight: 1.4;
+  --line-height-tightest: 1;
 
   /* grain */
   --grain: 0%;
@@ -78,7 +79,7 @@ html::before {
 body {
   font-family: "Noto Sans", sans-serif;
   /* font-family: "Open Sans", sans-serif; */
-  line-height: 1;
+  line-height: var(--line-height-tightest);
   font-weight: var(--normal);
   color: var(--primary-text-color);
   background-color: var(--primary-color);
@@ -87,9 +88,11 @@ body {
 body main {
   display: flex;
   flex-direction: column;
-  margin-top: 30rem;
+  margin-top: 23rem;
   gap: 14rem;
   margin-bottom: 22.4rem;
+
+  align-items: center;
 }
 
 /*  */
@@ -219,13 +222,13 @@ body main {
 /* SECTION HERO START */
 /*  */
 
-.section-name-title {
+.section-hero {
   margin: 0 auto;
-  max-width: 154.5rem;
-  width: 100%;
 }
 
 .name-title {
+  max-width: 154.5rem;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
 }
@@ -238,7 +241,7 @@ body main {
 
 .firstname,
 .lastname {
-  line-height: 0.8; /* var this */
+  line-height: var(--line-height-tightest);
   font-size: var(--heading-1);
 }
 .lastname {
@@ -248,45 +251,10 @@ body main {
 .job {
   align-self: center;
   justify-self: center;
-
   font-size: 2.4rem;
+  white-space: nowrap;
 }
 
-/*  */
-/* SECTION HERO END */
-/*  */
-
-/*  */
-/* SECTION HERO START */
-/*  */
-/* .section-hero {
-  margin: 0 auto;
-}
-.hero {
-  display: grid;
-  grid-template-columns: min-content min-content;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  gap: 3.2rem;
-  max-width: 154.5rem;
-}
-.hero-img-box {
-  justify-self: end;
-  margin-left: auto;
-}
-.hero-img {
-  width: 34rem;
-  height: 54rem;
-}
-.hero-title-box {
-  justify-self: start;
-}
-.hero-title {
-  font-size: var(--heading-2);
-  font-weight: var(--bold);
-} */
 /*  */
 /* SECTION HERO END */
 /*  */
