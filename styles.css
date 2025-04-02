@@ -24,22 +24,9 @@
   /* line height */
   --line-height-normal: 1.8;
   --line-height-tight: 1.4;
-  --line-height-tightest: 1;
 
   /* grain */
   --grain: 0%;
-
-  /* --heading-style-h1: 25.2rem;
-  --heading-style-h2: 12.1rem;
-  --heading-style-h3: 8.1rem;
-  --heading-style-h4: 5.4rem;
-  --heading-style-h5: 3.6rem;
-  --heading-style-h6: 2.4rem;
-  --text-size-large: 0rem;
-  --text-size-medium: 0rem;
-  --text-size-regular: 1.6rem;
-  --text-size-small: 1rem;
-  --text-size-tiny: 0rem; */
 }
 * {
   margin: 0;
@@ -79,7 +66,7 @@ html::before {
 body {
   font-family: "Noto Sans", sans-serif;
   /* font-family: "Open Sans", sans-serif; */
-  line-height: var(--line-height-tightest);
+  line-height: 1;
   font-weight: var(--normal);
   color: var(--primary-text-color);
   background-color: var(--primary-color);
@@ -217,7 +204,7 @@ body main {
 /* SECTION NAME TITLE START */
 /*  */
 
-.section-hero {
+.section-name-title {
   margin: 0 auto;
 }
 
@@ -230,15 +217,11 @@ body main {
   justify-items: center;
   align-items: center;
   grid-column: span 8;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.firstname,
-.lastname {
-  line-height: var(--line-height-tightest);
+  line-height: var(--line-height-tight);
   font-size: var(--heading-1);
+
+  /* text-transform: uppercase;
+  font-weight: 200; */
 }
 .hero-img-box {
   justify-self: end;
