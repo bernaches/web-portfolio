@@ -37,7 +37,7 @@
     font-size: 56.25%;
   }
   body main {
-    margin-top: 42rem;
+    margin-top: 38vh;
   }
   .header {
     margin: 4rem 15rem 4rem 15rem;
@@ -62,7 +62,7 @@
     --heading-1: 15rem;
   }
   body main {
-    margin-top: 52rem;
+    margin-top: 48vh;
   }
   .header {
     margin: 4rem 6.4rem 4rem 6.4rem;
@@ -135,7 +135,7 @@
     font-size: 43.75%;
   }
   body main {
-    margin-top: 75rem;
+    margin-top: 58vh;
   }
   .section-hero,
   .section-about-me,
@@ -303,7 +303,7 @@
     --heading-2: 6rem;
   }
   body main {
-    margin-top: 85rem;
+    margin-top: 68vh;
   }
 
   .project-content {
@@ -340,7 +340,7 @@
     font-size: 37.5%;
   }
   body main {
-    margin-top: 104rem;
+    /* margin-top: 104rem; */
   }
   .header {
     margin: 4rem 2rem 4rem 2rem;
