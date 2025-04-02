@@ -61,7 +61,7 @@ html::after {
 }
 html::before {
   background-color: var(--primary-color);
-  background: url(noise-grain-light.svg);
+  background: url(img/noise-grain-light.svg);
 }
 body {
   font-family: "Noto Sans", sans-serif;
