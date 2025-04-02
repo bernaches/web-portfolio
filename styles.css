@@ -288,6 +288,7 @@ body main {
 }
 
 .about-me-text {
+  text-align: left;
   margin-bottom: 2.4rem;
   grid-column: 6 / span 3;
   grid-row: 1 / span 2;
@@ -377,6 +378,9 @@ body main {
 .responsibilities {
   font-size: var(--text-normal);
   line-height: var(--line-height-normal);
+}
+.responsibilities {
+  text-align: left;
 }
 .company-description {
   display: flex;
@@ -522,7 +526,7 @@ body main {
   line-height: var(--line-height-normal);
   font-size: var(--text-normal);
   color: var(--secondary-text-color);
-  text-align: justify;
+  text-align: left;
 }
 .img-buttons {
   /* grid col */
